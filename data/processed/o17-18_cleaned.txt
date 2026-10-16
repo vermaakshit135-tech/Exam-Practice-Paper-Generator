@@ -1,0 +1,74 @@
+===== PAGE 1 =====
+Printed pages: 01
+Sub Code: NCS501
+Paper Id:
+1 0 3 6
+Roll No:
+B TECH
+(SEM V) THEORY EXAMINATION 2017-18
+DESIGN AND ANALYSIS OF ALGORITHMS
+Time: 3 Hours
+Notes: Attempt all Sections. Assume any missing data.
+Total Marks: 100
+SECTION-A
+1. Define/Explain the following: (2*10=20)
+(a)Difference between Complete Binary Tree and Binary Tree?
+(b)Difference between Greedy Technique and Dynamic programming.
+(c) Solve the following recurrence using Master method:
+T (n) = 4T (n/3) + n2
+(d)Name the sorting algorithm that is most practically used and also write its Time Complexity.
+(e) Find the time complexity of the recurrence relation
+T(n)= n +T(n/10)+T(7n/5)
+(f) Explain Single source shortest path.
+(g) Define Graph Coloring.
+(h)Compare Time Complexity with Space Complexity.
+(i) What are the characteristics of the algorithm?
+(j) Differentiate between Backtracking and Branch and Bound Techniques.
+SECTION-B
+2. Attempt any three of the following: (10×3=30)
+(a)Solve the following By Recursion Tree Method
+T(n)=n+T(n/5)+T(4n/5)
+(b)Insert the following information F,S,Q,K,C,L,H,T,V,W,M,R,N,P,A,B,X,Y,D,Z,E,G,I.
+Into an empty B-tree with degree t=3.
+(c) What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST
+of the Graph. Also write its Time-Complexity
+(d) What is Red-Black tree? Write an algorithm to insert a node in an empty red-black tree
+explain with suitable example.
+(e) Explain HEAP-SORT on the array. Illustrate the operation of HEAP-SORT on the array
+A= {6, 14, 3, 25, 2, 10, 20, 7, 6}
+SECTION C
+3.
+Attempt any one part of the following:
+(10 x 1=10)
+(a)
+Explain Convex –Hull problem.
+(b)
+Find the shortest path in the below graph from the source vertex 1 to all other vertices
+by using Dijkstra’s algorithm.
+===== PAGE 2 =====
+4. Attempt any one part of the following:
+(10 x 1=10)
+(a)
+What is backtracking? Discuss sum of subset problem with the help of an
+example.
+(b)
+Write down an algorithm to compute Longest Common Subsequence
+(LCS) of two given strings and analyze its time complexity.
+5. Attempt any one part of the following:
+(10 x 1= 10)
+(a) The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A
+competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest
+integer value for a A’ is asymptotically faster than A?
+(b) Discuss the problem classes P, NP and NP –complete .with class relationship.
+6. Attempt any one part of the following:
+(10 x 1=10)
+(a) Explain properties of Binomial Heap in .Write an algorithm to perform uniting
+two Binomial Heaps. And also to find Minimum Key.
+(b) Given the six items in the table below and a Knapsack with Weight 100, what is the
+solution to the Knapsack problem in all concepts. I.e. explain greedy all approaches and find
+the optimal solution
+7. Attempt any one part of the following:
+(10 x 1=10)
+(a) Compute the prefix function π for the pattern P= a b a c a b using KNUTH-
+MORRIS –PRATT Algorithm. Also explain Naïve String Matching algorithm.
+(b) Explain Approximation and Randomized algorithms.

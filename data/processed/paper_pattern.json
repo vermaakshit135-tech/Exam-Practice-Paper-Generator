@@ -1,0 +1,20 @@
+{
+    "time": "3 Hours",
+    "max_marks": 70,
+    "section_a": {
+        "questions": 7,
+        "marks_each": 2,
+        "attempt": 7
+    },
+    "section_b": {
+        "questions": 5,
+        "marks_each": 7,
+        "attempt": 3
+    },
+    "section_c": {
+        "questions": 5,
+        "alternatives_per_question": 2,
+        "marks_each": 7,
+        "attempt": 5
+    }
+}

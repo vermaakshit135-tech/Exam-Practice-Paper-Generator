@@ -1,0 +1,101 @@
+
+===== PAGE 1 =====
+
+Printed Pages: 02 Subject Code: RCSSO2
+Paper Id: | 110502 Roll Ne
+
+BTECH
+(SEM V) THEORY EXAMINATION 2018-19
+DESIGN & ANALYSIS OF ALGORITHMS
+Time: 3 Hours Total Marks: 70
+
+Note: 1. Attempt all Sections. [f require any missing data; then choose suitably.
+
+2. Any special paper specific instruction.
+SECTION A
+
+1. Attempt alf questions in brief. 2x7=14
+
+a _ Rank the following by growth rate:
+1, 26%, log n, log (logn), log’n, (Ign), 4, (3/2)", a!
+b. Prove that if n>=1, then for any n-key B-Tree of height h and minimum degree t >~2, h<=
+log « ((n +1)/2).
+c. Define principal of optimality. When and how dynamic programming is
+applicable
+d. Explain application of graph coloring problem.
+¢. Compare adjacency matrix and linked Adj -hsts representation of a Graph with ,
+suitable example/diagram. a PY
+f, What are approximation algorithms? meant by P (n) approximation algorithms?
+g. What do you mean by stability of a cat agony? Explain its application,
+SI
+
+2. Attempt any three of the following: “y?x3=21
+
+a —_Use a recursion tree to givé‘ait asymptotically tight solution to the x¢curfence
+Ti) = Tian) + T((1 - @yih+ on, where a is a constant in the ranged *a< | and
+> 0 is also a consti aS
+
+b. Define BNP, AP hard and NP Complete Problems: iPreve that Travelling Salesman
+Problem is NP-Complete.
+
+©. Consider the weights and values of items listed below. Note that there is only one unit of
+each item. The task is to pick a subset of these items such that their total weight is no
+more than 11 Kgs and their total value is maximized. Moreover, no item may be split, The
+total value of items picked by an optimal algorithm is denoted by Vopr. A greedy
+algorithm sorts the items by their value-to-weight ratios in descending order and packs
+them greedily, starting from the first item in the ordered list. The total value of items
+picked by the greedy algorithm is denoted by Vgrees.. Find the value of Vopt ~ Veeedy
+
+Vv 8 120 j24 |
+d. Insert the following keys in a 2-3-4 B Tree:
+40, 35, 22, 90, 12, 45, 58, 78, 67, 60 and then delete key 35 and 22 one after other
+€. Prove that if the weights on the edge of the connected undirected graph are distinct then
+there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss
+Prim’s Minimum Spanning Tree Algorithm in detail.
+
+
+
+===== PAGE 2 =====
+
+4
+
+SECTION C
+Attempt any one part of the following: 7x1=7
+
+(a) The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A.
+Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the
+smallest value of ‘a’ such that A is asymptotically faster than B.?
+
+(6) How will you sort following array A of elements using heap sort
+A= (23,9, 18, 45, 5,9, 1, 17, 6).
+Attempt any one part of the following: Txl=7
+
+(a) Explain the different conditions of getting union of two existing binomial
+Heaps. Also write algorithm for union of two Binomial Heaps. What is its complexity?
+
+(b) Insert the elements 8, 20, 11, 14, 9, 4, 12 in a Red-Black Tree and delete 12, 4, 9, 14
+respectively.
+
+Attempt any one part of the following: 7x1=7
+
+(a) When do Dijkstra and the Bellman-Ford algorithm both fail to find a shortest path?Can
+Bellman ford detect all negative weight cycles in a graph? Apply Bellman Ford Algorithm
+on the following graph
+
+(>) — Given an integer x and a positive number n, use divide & conquer approach to write a
+function that computes x*with time complexity O (logn). ~
+
+Attempt any one part of the following: 7x1=7
+(a) Solve the Subset sum problem using Backtracking."“where n=4, m=18, w [4] = (5. 10, 8,
+13}
+(6) Give Floyd War shall algorithm to find he shortest path for all pairs of vertices in a
+graph. Give the complexity of the algorithm. Explain with example
+ey
+
+Attempt any one part of the following: Tx1=7
+(a) What is the application of Fast Fourier Transform (FFT)? Also write the recursive
+algorithm for FFT...
+(b) Give a linear time algorithin to determine if a text T is a cycle rotation of another string T*
+For example, ‘RAJA’ and ‘JARA’ are cyclic rotations of each other.
+
+

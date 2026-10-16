@@ -1,0 +1,350 @@
+{
+    "important_topics": [
+        "Recurrence Relations and Master Method / Recursion Tree",
+        "Red-Black Trees (Insertion and Deletion)",
+        "B-Trees (Insertion and Deletion)",
+        "Binomial Heaps and Fibonacci Heaps",
+        "Minimum Spanning Trees (Kruskal's and Prim's Algorithms)",
+        "Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)",
+        "Dynamic Programming (0/1 Knapsack, LCS, TSP)",
+        "Backtracking and Branch-and-Bound (Sum of Subset, N-Queens, TSP)",
+        "String Matching (Knuth-Morris-Pratt Algorithm)",
+        "Computational Complexity (P, NP, NP-Complete, NP-Hard)",
+        "Approximation and Randomized Algorithms",
+        "Sorting Algorithms (Heap Sort, Merge Sort, Counting Sort)"
+    ],
+    "repeated_questions": [
+        {
+            "topic": "Knuth-Morris-Pratt (KMP) Algorithm",
+            "questions": [
+                "Compute the prefix function π for the pattern P= a b a c a b using KNUTH- MORRIS –PRATT Algorithm. Also explain Naïve String Matching algorithm.",
+                "Describe in detail Knuth-Morris-Pratt string ching algorithm. Compute the pref x function 7 for the pattern ababbabbabbababbabb when the alphabet is ~ = {a,b}.",
+                "Write KMP algorithm for string matching? Perform the KMP algorithm to search the occurrences of the pattern abaab in the text string abbabaabaabab. 10",
+                "Explain and Write the Knuth-Morris-Pratt algorithm for pattern matching also write its time complexity."
+            ],
+            "years": [
+                "2017-18",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Red-Black Tree Operations",
+            "questions": [
+                "What is Red-Black tree? Write an algorithm to insert a node in an empty red-black tree explain with suitable example.",
+                "Insert the elements 8, 20, 11, 14, 9, 4, 12 in a Red-Black Tree and delete 12, 4, 9, 14 respectively.",
+                "Insert the following-element in an initially empty RB-Treé. 12, 9, 81, 76, 23, 43, 65, 88, 76, 32, 54. Now Delete 23 and 81.",
+                "Write an algorithm for insertion of key in the Red-Black Tree. Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- 5, 16, 22, 25, 2, 10, 18, 30, 50, 12, 1. 10",
+                "Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- {15, 13, 12, 16, 19, 23, 5, 8}."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "B-Tree Insertion",
+            "questions": [
+                "Insert the following information F,S,Q,K,C,L,H,T,V,W,M,R,N,P,A,B,X,Y,D,Z,E,G,I. Into an empty B-tree with degree t=3.",
+                "Insert the following keys in a 2-3-4 B Tree: 40, 35, 22, 90, 12, 45, 58, 78, 67, 60 and then delete key 35 and 22 one after other",
+                "Using minimum degree ‘t’ as 3, insert following sequence of integers 10, 25, 20, 35, 30, 55, 40, 45, 50, 55, 60, 75, 70, 65, 80, 85 and 90 in an initially empty B-Tree. Give the number of nodes splitting operations that take place.",
+                "Show the results of inserting the keys F, S, Q, K, C, L, H, T, V, W, M, R, N, P, A, B, X, Y, D, Z, E in order into an empty B-tree. Use t=3, where t is the minimum degree of B- tree. 10"
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2020-21"
+            ]
+        },
+        {
+            "topic": "Binomial Heap Union Operation",
+            "questions": [
+                "Explain properties of Binomial Heap in .Write an algorithm to perform uniting two Binomial Heaps. And also to find Minimum Key.",
+                "Explain the different conditions of getting union of two existing binomial Heaps. Also write algorithm for union of two Binomial Heaps. What is its complexity?",
+                "Explain and write an algorithm for union of two binomial heaps and also write its time complexity? 10 5."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2020-21"
+            ]
+        },
+        {
+            "topic": "Minimum Spanning Tree (Kruskal's and Prim's Algorithms)",
+            "questions": [
+                "What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST of the Graph. Also write its Time-Complexity",
+                "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Prim’s Minimum Spanning Tree Algorithm in detail. ===== PAGE 2 ===== 4 SECTION C",
+                "Define spanning tree. Write Kruskal’s algorithm for finding minimum cost spanning tree. Describe how Kruskal’s algorithm is different from Prim’s algorithm for finding minimum cost spanning tree.",
+                "Define minimum spanning tree (MST). Write Prim’s algorithm to generate a MST for any given weighted graph. Generate MST for the following graph using Prim’s algorithm. 10",
+                "Write and explain the Kruskal algorithm to find the Minimum Spanning Tree of a graph with suitable example."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Sum of Subsets Problem (Backtracking)",
+            "questions": [
+                "What is backtracking? Discuss sum of subset problem with the help of an example.",
+                "Solve the Subset sum problem using Backtracking.\"“where n=4, m=18, w [4] = (5. 10, 8, 13}",
+                "What is sum of subset problem? Draw a state space tree for Sum of subset problem using backtracking? Let n=6, m=30 and w [1:6] = {5, 10, 12, 13, 15, 18} 10"
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2020-21"
+            ]
+        },
+        {
+            "topic": "Floyd-Warshall Algorithm",
+            "questions": [
+                "Give Floyd War shall algorithm to find he shortest path for all pairs of vertices in a graph. Give the complexity of the algorithm. Explain with example ey",
+                "Define Floyd Warshall Algorithm for all Pair shortest path and apply the same on following graph: 7.",
+                "Write down the Floyd Warshal algorithm."
+            ],
+            "years": [
+                "2018-19",
+                "2019-20",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Convex Hull Problem",
+            "questions": [
+                "Explain Convex –Hull problem.",
+                "What do you mean by convex hull? Describe an algorithm that solves the convex hull problem. Find the time complexity of the algorithm. 6.",
+                "What do you mean by convex hull?"
+            ],
+            "years": [
+                "2017-18",
+                "2019-20",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Fast Fourier Transform (FFT)",
+            "questions": [
+                "What is the application of Fast Fourier Transform (FFT)? Also write the recursive algorithm for FFT...",
+                "Explain applications of FFT. 5",
+                "Explain Fast Fourier Transform in brief. 2"
+            ],
+            "years": [
+                "2018-19",
+                "2019-20",
+                "2020-21"
+            ]
+        },
+        {
+            "topic": "Heap Sort",
+            "questions": [
+                "Explain HEAP-SORT on the array. Illustrate the operation of HEAP-SORT on the array A= {6, 14, 3, 25, 2, 10, 20, 7, 6}",
+                "How will you sort following array A of elements using heap sort A= (23,9, 18, 45, 5,9, 1, 17, 6).",
+                "What do you understand by stable and unstable sorting? Sort the following sequence {25, 57, 48, 36, 12, 91, 86, 32} using heap sort. 4."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "N-Queens Problem",
+            "questions": [
+                "Discuss n queen’s problem. Solve 4 queen’s problem using backtracking method? 10 7.",
+                "What is N queens problem? Draw a state space tree for 4 queens problem using backtracking."
+            ],
+            "years": [
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Backtracking vs Branch and Bound",
+            "questions": [
+                "Differentiate between Backtracking and Branch and Bound Techniques.",
+                "Differentiate Backtracking algorithm with branch and bound algorithm. 2"
+            ],
+            "years": [
+                "2017-18",
+                "2020-21"
+            ]
+        },
+        {
+            "topic": "Complexity Classes (P, NP, NP-Complete, NP-Hard)",
+            "questions": [
+                "Discuss the problem classes P, NP and NP –complete .with class relationship. 6.",
+                "Define BNP, AP hard and NP Complete Problems: iPreve that Travelling Salesman Problem is NP-Complete.",
+                "Define NP-Hard and NP- coniplete problems. What are the steps involved in proving a problem NP- complete? Specify the problems already proved to be NP-complete.",
+                "Write short notes on following: (i.) Randomized algorithm. (ii.) NP- complete and NP hard. 10",
+                "Explain NP-complete and NP-Hard."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Approximation and Randomized Algorithms",
+            "questions": [
+                "Explain Approximation and Randomized algorithms.",
+                "What are approximation algorithms? meant by P (n) approximation algorithms?",
+                "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51",
+                "What is approximation algorithm? Explain set cover problem using approximation algorithm. 10",
+                "Explain Randomized algorithm in brief.",
+                "Write and explain the algorithm to solve vertex cover problem using approximation algorithm."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Single Source Shortest Path (Dijkstra and Bellman-Ford)",
+            "questions": [
+                "Explain Single source shortest path.",
+                "Find the shortest path in the below graph from the source vertex 1 to all other vertices by using Dijkstra’s algorithm. ===== PAGE 2 ===== 4.",
+                "When do Dijkstra and the Bellman-Ford algorithm both fail to find a shortest path?Can Bellman ford detect all negative weight cycles in a graph? Apply Bellman Ford Algorithm on the following graph",
+                "Explain Dijkstra’s algorithm to solve single source shortest path problem with suitable example. 10 6.",
+                "Write down the Bellman Ford algorithm to solve the single source shortest path problem also write its time complexity. 6."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Skip List",
+            "questions": [
+                "Explain Skip list in brief. 2",
+                "What is skip list? Explain the Search operation in Skip list with suitable ===== PAGE 2 ===== QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 example also write its algorithm. 5."
+            ],
+            "years": [
+                "2020-21",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Knapsack Problem",
+            "questions": [
+                "Given the six items in the table below and a Knapsack with Weight 100, what is the solution to the Knapsack problem in all concepts. I.e. explain greedy all approaches and find the optimal solution 7.",
+                "Consider the weights and values of items listed below. Note that there is only one unit of each item. The task is to pick a subset of these items such that their total weight is no more than 11 Kgs and their total value is maximized. Moreover, no item may be split, The total value of items picked by an optimal algorithm is denoted by Vopr. A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by Vgrees.. Find the value of Vopt ~ Veeedy Vv 8 120 j24 |",
+                "Solve the following 0/1 knapsack problem using dynamic programming. ~ P=[11,21,31,33] w=[2,11,22,15] c=40, n=4.",
+                "What is Knapsack problem? Solve Fractional knapsack problem using greedy programming for the following four items with their weights w = {3, 5, 9, 5} and values P = {45, 30, 45, 10} with knapsack capacity is 16."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19",
+                "2019-20",
+                "2021-22"
+            ]
+        },
+        {
+            "topic": "Graph Coloring Problem",
+            "questions": [
+                "Define Graph Coloring.",
+                "Explain application of graph coloring problem."
+            ],
+            "years": [
+                "2017-18",
+                "2018-19"
+            ]
+        },
+        {
+            "topic": "Travelling Salesperson Problem",
+            "questions": [
+                "Define BNP, AP hard and NP Complete Problems: iPreve that Travelling Salesman Problem is NP-Complete.",
+                "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51",
+                "What is travelling salesman problem (TSP)? Find the solution of following TSP using dynamic programming. 0 1 15 6 2 0 7 3 9 6 0 12 10 4 8 0 10",
+                "What is travelling salesman problem (TSP)? Find the solution of following TSP using Branch & Bound method 0 20 30 10 11 15 0 16 4 2 3 5 0 2 4 19 6 18 0 3 16 4 7 16 0"
+            ],
+            "years": [
+                "2018-19",
+                "2019-20",
+                "2020-21",
+                "2021-22"
+            ]
+        }
+    ],
+    "topic_distribution": [
+        {
+            "topic": "Asymptotic Analysis and Recurrence Relations",
+            "question_count": 17
+        },
+        {
+            "topic": "Advanced Data Structures (B-Trees, Red-Black Trees, Binomial Heaps, Fibonacci Heaps, Skip Lists)",
+            "question_count": 18
+        },
+        {
+            "topic": "Graph Algorithms (Shortest Paths, MST, Graph Coloring, Representation)",
+            "question_count": 16
+        },
+        {
+            "topic": "Dynamic Programming and Greedy Algorithms",
+            "question_count": 11
+        },
+        {
+            "topic": "Backtracking and Branch-and-Bound",
+            "question_count": 9
+        },
+        {
+            "topic": "Sorting and Searching",
+            "question_count": 8
+        },
+        {
+            "topic": "String Matching Algorithms",
+            "question_count": 5
+        },
+        {
+            "topic": "Complexity Theory (P, NP, NP-Complete, NP-Hard) and Approximation / Randomized Algorithms",
+            "question_count": 15
+        },
+        {
+            "topic": "Geometric and Transform Algorithms (Convex Hull, Fast Fourier Transform)",
+            "question_count": 6
+        },
+        {
+            "topic": "Basic Algorithm Concepts and Trees",
+            "question_count": 3
+        }
+    ],
+    "practice_concepts": [
+        "Master Theorem and Recursion Tree Method for solving recurrences",
+        "Arranging asymptotic functions by growth rate",
+        "Red-Black Tree insertion cases, recoloring, and rotation rules",
+        "Red-Black Tree deletion fix-up rules",
+        "B-Tree insertion and node splitting mechanism with minimum degree t",
+        "Binomial Heap union algorithm and binomial tree degree sequence",
+        "Kruskal's algorithm with disjoint set union-find",
+        "Prim's algorithm for minimum spanning tree",
+        "Dijkstra's single source shortest path algorithm on weighted directed/undirected graphs",
+        "Bellman-Ford algorithm and detection of negative-weight cycles",
+        "Floyd-Warshall all-pairs shortest path recurrence and dynamic programming table formulation",
+        "0/1 Knapsack problem using dynamic programming vs Fractional Knapsack using greedy approach",
+        "Sum of subsets problem using backtracking and state space tree representation",
+        "N-Queens problem solving with backtracking (specifically 4-Queens)",
+        "Knuth-Morris-Pratt (KMP) prefix function computation and pattern matching",
+        "Proving NP-Completeness and understanding polynomial-time reductions",
+        "Approximation ratio and approximation algorithms for Vertex Cover, Set Cover, and TSP",
+        "Convex Hull Graham's scan and Jarvis's march algorithms",
+        "Recursive Fast Fourier Transform (FFT) algorithm and applications",
+        "Heap Sort building max-heap and sift-down operations",
+        "Travelling Salesperson Problem using Dynamic Programming and Branch-and-Bound"
+    ]
+}

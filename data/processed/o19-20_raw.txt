@@ -1,0 +1,102 @@
+
+===== PAGE 1 =====
+
+Printed Page 1 of 2 Sub Code: RCSS02
+Paper Id: | 110502 rotNo:[| | | | | | | | T[ ITIL)
+
+B. TECH.
+(SEM V) THEORY EXAMINATION 2019-20
+DESIGN AND ANALYSIS OF ALGORITHM
+
+Time: 3 Hours Total Marks: 70
+Note: 1. Attempt all Sections. If require any missing data; then choose suitably.
+
+3.
+
+SECTION A
+
+Attempt all questions in brief. 2x7=14
+
+a. How do you compare the performance of various algorithms?
+
+b. Take the following list of functions and arrange them in ascending order of
+growth rate. That is, if function g(n) immediately follows function f(n) in your
+list, then it should be the case that f(n) is O(g(n)).
+fi(n) = n?4, fh(n) = V2", f3(n) =n + 10, f4(n) = 10n, f3(n) = 100n, and
+fo(n) =? log n
+
+c. What is advantage of binary search over linear search? Also, state limitations of
+binary search.
+d. What are greedy algorithms? Explain their characteristics?
+e. Explain applications of FFT. 5
+f. Define feasible and optimal solution. aN
+g. What do you mean by polynomial me reduction?
+SECTION B
+Attempt any three of the following: 7%3=21
+
+a. (i) _—_ Solve the recurrenoe.T (n) = 2T(n/2) + n?+ 2n+ 1
+(ii) Prove that worst case running time of any comparison sort is Q(nlogn)
+
+b. Insert the following-element in an initially empty RB-Treé.
+12, 9, 81, 76, 23, 43, 65, 88, 76, 32, 54. Now Delete 23 and 81.
+
+c. Define spanning tree. Write Kruskal’s algorithm for finding minimum cost
+spanning tree. Describe how Kruskal’s algorithm is different from Prim’s
+algorithm for finding minimum cost spanning tree.
+
+d. What is dynamic programming? How, is this approach different from recursion?
+Explain with example. Fa
+
+e. Define NP-Hard and NP- coniplete problems. What are the steps involved in
+proving a problem NP- complete? Specify the problems already proved to be
+NP-complete.
+
+SECTION C
+Attempt any one part of the following: 7Tx1=7
+
+(a) Among Merge sort, Insertion sort and quick sort which sorting technique is the
+best in worst case. Apply the best one among these algorithms to Sort the list E,
+X, A, M, P, L, E in alphabetic order.
+
+(b) Solve the recurrence using recursion tree method:
+T (n)=T (1/2) + T (W/4) + T (1/8) +0
+
+MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51
+
+
+===== PAGE 2 =====
+
+Printed Page 2 of 2 Sub Code: RCSS02
+Paper Id: 110502 Roll No: L | | | | | | | |
+
+4, Attempt any one part of the following: 7Tx1=7
+
+(a)
+
+Using minimum degree ‘t’ as 3, insert following sequence of integers 10, 25,
+20, 35, 30, 55, 40, 45, 50, 55, 60, 75, 70, 65, 80, 85 and 90 in an initially empty
+B-Tree. Give the number of nodes splitting operations that take place.
+
+(b) Explain the algorithm to delete a given element in a binomial Heap. Give an
+example for the same.
+5. Attempt any one part of the following: 7x1=7
+(a) Compare the various programming paradigms such as divide-and-conquer,
+dynamic programming and greedy approach.
+(b) What do you mean by convex hull? Describe an algorithm that solves the
+convex hull problem. Find the time complexity of the algorithm.
+6. Attempt any one part of the following: 7x1=7
+(a) Solve the following 0/1 knapsack problem using dynamic programming. ~
+P=[11,21,31,33] w=[2,11,22,15] c=40, n=4.
+(b) Define Floyd Warshall Algorithm for all Pair shortest path and apply the same
+on following graph:
+7. Attempt any one part of the following: a 7Tx1=7
+(a) Describe in detail Knuth-Morris-Pratt string ching algorithm. Compute the
+pref x function 7 for the pattern ababbabbabbababbabb when the alphabet is ~
+= {a,b}.
+(b) What is an approximation algorithm?’ ne is meant by P (n) approximation
+
+algorithms? Discuss approximation algorithm for Travelling Salesman
+Problem.
+
+MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51
+

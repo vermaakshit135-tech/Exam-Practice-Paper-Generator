@@ -1,0 +1,956 @@
+{
+    "analyses": [
+        {
+            "question": "Difference between Complete Binary Tree and Binary Tree?",
+            "year": "o17-18_cleaned",
+            "topic": "Data Structures",
+            "subtopic": "Binary Trees",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Difference between Greedy Technique and Dynamic programming.",
+            "year": "o17-18_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Greedy vs Dynamic Programming",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Solve the following recurrence using Master method: T (n) = 4T (n/3) + n2",
+            "year": "o17-18_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Master Theorem",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Name the sorting algorithm that is most practically used and also write its Time Complexity.",
+            "year": "o17-18_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Quick Sort",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Find the time complexity of the recurrence relation T(n)= n +T(n/10)+T(7n/5)",
+            "year": "o17-18_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Not specified",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain Single source shortest path.",
+            "year": "o17-18_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Single Source Shortest Path",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Define Graph Coloring.",
+            "year": "o17-18_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Graph Coloring",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Compare Time Complexity with Space Complexity.",
+            "year": "o17-18_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Asymptotic Analysis",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What are the characteristics of the algorithm?",
+            "year": "o17-18_cleaned",
+            "topic": "Introduction to Algorithms",
+            "subtopic": "Algorithm Properties",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Differentiate between Backtracking and Branch and Bound Techniques.",
+            "year": "o17-18_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Backtracking vs Branch and Bound",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Solve the following By Recursion Tree Method T(n)=n+T(n/5)+T(4n/5)",
+            "year": "o17-18_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Recursion Tree Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Insert the following information F,S,Q,K,C,L,H,T,V,W,M,R,N,P,A,B,X,Y,D,Z,E,G,I. Into an empty B-tree with degree t=3.",
+            "year": "o17-18_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "B-Tree Insertion",
+            "method": "B-Tree Insertion Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST of the Graph. Also write its Time-Complexity",
+            "year": "o17-18_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Minimum Spanning Tree",
+            "method": "Kruskal's Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is Red-Black tree? Write an algorithm to insert a node in an empty red-black tree explain with suitable example.",
+            "year": "o17-18_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Red-Black Trees",
+            "method": "Red-Black Tree Insertion",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain HEAP-SORT on the array. Illustrate the operation of HEAP-SORT on the array A= {6, 14, 3, 25, 2, 10, 20, 7, 6}",
+            "year": "o17-18_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Heap Sort",
+            "method": "Heap Sort Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain Convex –Hull problem.",
+            "year": "o17-18_cleaned",
+            "topic": "Computational Geometry",
+            "subtopic": "Convex Hull",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Find the shortest path in the below graph from the source vertex 1 to all other vertices by using Dijkstra’s algorithm. ===== PAGE 2 ===== 4.",
+            "year": "o17-18_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Single Source Shortest Path",
+            "method": "Dijkstra's Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is backtracking? Discuss sum of subset problem with the help of an example.",
+            "year": "o17-18_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Sum of Subsets Problem",
+            "method": "Backtracking",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write down an algorithm to compute Longest Common Subsequence (LCS) of two given strings and analyze its time complexity. 5.",
+            "year": "o17-18_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "Longest Common Subsequence",
+            "method": "Dynamic Programming",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest integer value for a A’ is asymptotically faster than A?",
+            "year": "o17-18_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Master Theorem",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Discuss the problem classes P, NP and NP –complete .with class relationship. 6.",
+            "year": "o17-18_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Complexity Classes",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain properties of Binomial Heap in .Write an algorithm to perform uniting two Binomial Heaps. And also to find Minimum Key.",
+            "year": "o17-18_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Heaps",
+            "method": "Binomial Heap Union Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Given the six items in the table below and a Knapsack with Weight 100, what is the solution to the Knapsack problem in all concepts. I.e. explain greedy all approaches and find the optimal solution 7.",
+            "year": "o17-18_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Fractional Knapsack",
+            "method": "Greedy Approach",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Compute the prefix function π for the pattern P= a b a c a b using KNUTH- MORRIS –PRATT Algorithm. Also explain Naïve String Matching algorithm.",
+            "year": "o17-18_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Prefix Function Computation",
+            "method": "Knuth-Morris-Pratt Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain Approximation and Randomized algorithms.",
+            "year": "o17-18_cleaned",
+            "topic": "Special Topics",
+            "subtopic": "Approximation and Randomized Algorithms",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Rank the following by growth rate: 1, 26%, log n, log (logn), log’n, (Ign), 4, (3/2)\", a!",
+            "year": "o18-19_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Asymptotic Growth Rates",
+            "method": "Not specified",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Prove that if n>=1, then for any n-key B-Tree of height h and minimum degree t >~2, h<= log « ((n +1)/2).",
+            "year": "o18-19_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "B-Tree Properties",
+            "method": "Mathematical Proof",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Define principal of optimality. When and how dynamic programming is applicable",
+            "year": "o18-19_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "Principle of Optimality",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain application of graph coloring problem.",
+            "year": "o18-19_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Graph Coloring Applications",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Compare adjacency matrix and linked Adj -hsts representation of a Graph with , suitable example/diagram.",
+            "year": "o18-19_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Graph Representation",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What are approximation algorithms? meant by P (n) approximation algorithms?",
+            "year": "o18-19_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Approximation Algorithms",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What do you mean by stability of a cat agony? Explain its application, SI 2.",
+            "year": "o18-19_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Stability in Sorting Algorithms",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Use a recursion tree to givé‘ait asymptotically tight solution to the x¢curfence Ti) = Tian) + T((1 - @yih+ on, where a is a constant in the ranged *a< | and > 0 is also a consti aS",
+            "year": "o18-19_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Recursion Tree Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Define BNP, AP hard and NP Complete Problems: iPreve that Travelling Salesman Problem is NP-Complete.",
+            "year": "o18-19_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "NP-Completeness Proof of TSP",
+            "method": "Polynomial-time Reduction",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Consider the weights and values of items listed below. Note that there is only one unit of each item. The task is to pick a subset of these items such that their total weight is no more than 11 Kgs and their total value is maximized. Moreover, no item may be split, The total value of items picked by an optimal algorithm is denoted by Vopr. A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by Vgrees.. Find the value of Vopt ~ Veeedy Vv 8 120 j24 |",
+            "year": "o18-19_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "0/1 Knapsack Problem",
+            "method": "Dynamic Programming and Greedy",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Insert the following keys in a 2-3-4 B Tree: 40, 35, 22, 90, 12, 45, 58, 78, 67, 60 and then delete key 35 and 22 one after other",
+            "year": "o18-19_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "2-3-4 Tree Operations",
+            "method": "2-3-4 Tree Insertion and Deletion",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Prim’s Minimum Spanning Tree Algorithm in detail. ===== PAGE 2 ===== 4 SECTION C",
+            "year": "o18-19_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Minimum Spanning Tree",
+            "method": "Prim's Algorithm",
+            "question_type": "Theory"
+        },
+        {
+            "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of ‘a’ such that A is asymptotically faster than B.?",
+            "year": "o18-19_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Master Theorem",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "How will you sort following array A of elements using heap sort A= (23,9, 18, 45, 5,9, 1, 17, 6).",
+            "year": "o18-19_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Heap Sort",
+            "method": "Heap Sort Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain the different conditions of getting union of two existing binomial Heaps. Also write algorithm for union of two Binomial Heaps. What is its complexity?",
+            "year": "o18-19_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Heaps",
+            "method": "Binomial Heap Union Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Insert the elements 8, 20, 11, 14, 9, 4, 12 in a Red-Black Tree and delete 12, 4, 9, 14 respectively.",
+            "year": "o18-19_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Red-Black Tree Operations",
+            "method": "Red-Black Tree Insertion and Deletion",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "When do Dijkstra and the Bellman-Ford algorithm both fail to find a shortest path?Can Bellman ford detect all negative weight cycles in a graph? Apply Bellman Ford Algorithm on the following graph",
+            "year": "o18-19_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Single Source Shortest Path",
+            "method": "Bellman-Ford Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "— Given an integer x and a positive number n, use divide & conquer approach to write a function that computes x*with time complexity O (logn). ~",
+            "year": "o18-19_cleaned",
+            "topic": "Divide and Conquer",
+            "subtopic": "Modular/Binary Exponentiation",
+            "method": "Divide and Conquer",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Solve the Subset sum problem using Backtracking.\"“where n=4, m=18, w [4] = (5. 10, 8, 13}",
+            "year": "o18-19_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Sum of Subsets Problem",
+            "method": "Backtracking",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Give Floyd War shall algorithm to find he shortest path for all pairs of vertices in a graph. Give the complexity of the algorithm. Explain with example ey",
+            "year": "o18-19_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "All-Pairs Shortest Path",
+            "method": "Floyd-Warshall Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is the application of Fast Fourier Transform (FFT)? Also write the recursive algorithm for FFT...",
+            "year": "o18-19_cleaned",
+            "topic": "Fast Fourier Transform",
+            "subtopic": "Recursive FFT Algorithm",
+            "method": "Fast Fourier Transform",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Give a linear time algorithin to determine if a text T is a cycle rotation of another string T* For example, ‘RAJA’ and ‘JARA’ are cyclic rotations of each other.",
+            "year": "o18-19_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Cyclic Rotation Checking",
+            "method": "KMP Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "How do you compare the performance of various algorithms?",
+            "year": "o19-20_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Asymptotic Analysis",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Take the following list of functions and arrange them in ascending order of growth rate. That is, if function g(n) immediately follows function f(n) in your list, then it should be the case that f(n) is O(g(n)). fi(n) = n?4, fh(n) = V2\", f3(n) =n + 10, f4(n) = 10n, f3(n) = 100n, and fo(n) =? log n",
+            "year": "o19-20_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Asymptotic Growth Rates",
+            "method": "Not specified",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is advantage of binary search over linear search? Also, state limitations of binary search.",
+            "year": "o19-20_cleaned",
+            "topic": "Searching Algorithms",
+            "subtopic": "Binary Search vs Linear Search",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What are greedy algorithms? Explain their characteristics?",
+            "year": "o19-20_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Greedy Choice Property",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain applications of FFT. 5",
+            "year": "o19-20_cleaned",
+            "topic": "Fast Fourier Transform",
+            "subtopic": "FFT Applications",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Define feasible and optimal solution. aN",
+            "year": "o19-20_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Optimization Problems",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What do you mean by polynomial me reduction?",
+            "year": "o19-20_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Polynomial-time Reduction",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "(i) _—_ Solve the recurrenoe.T (n) = 2T(n/2) + n?+ 2n+ 1 (ii) Prove that worst case running time of any comparison sort is Q(nlogn)",
+            "year": "o19-20_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrences and Lower Bounds",
+            "method": "Master Theorem and Decision Tree Model",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Insert the following-element in an initially empty RB-Treé. 12, 9, 81, 76, 23, 43, 65, 88, 76, 32, 54. Now Delete 23 and 81.",
+            "year": "o19-20_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Red-Black Tree Operations",
+            "method": "Red-Black Tree Insertion and Deletion",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Define spanning tree. Write Kruskal’s algorithm for finding minimum cost spanning tree. Describe how Kruskal’s algorithm is different from Prim’s algorithm for finding minimum cost spanning tree.",
+            "year": "o19-20_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Minimum Spanning Tree",
+            "method": "Kruskal's Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is dynamic programming? How, is this approach different from recursion? Explain with example. Fa",
+            "year": "o19-20_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "DP vs Recursion",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Define NP-Hard and NP- coniplete problems. What are the steps involved in proving a problem NP- complete? Specify the problems already proved to be NP-complete.",
+            "year": "o19-20_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "NP-Completeness Reductions",
+            "method": "Polynomial-time Reduction",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Among Merge sort, Insertion sort and quick sort which sorting technique is the best in worst case. Apply the best one among these algorithms to Sort the list E, X, A, M, P, L, E in alphabetic order.",
+            "year": "o19-20_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Merge Sort",
+            "method": "Merge Sort Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Solve the recurrence using recursion tree method: T (n)=T (1/2) + T (W/4) + T (1/8) +0 MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51 ===== PAGE 2 ===== Printed Page 2 of 2 Sub Code: RCSS02 Paper Id: 110502 Roll No: L | | | | | | | | 4,",
+            "year": "o19-20_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Recursion Tree Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Using minimum degree ‘t’ as 3, insert following sequence of integers 10, 25, 20, 35, 30, 55, 40, 45, 50, 55, 60, 75, 70, 65, 80, 85 and 90 in an initially empty B-Tree. Give the number of nodes splitting operations that take place.",
+            "year": "o19-20_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "B-Tree Insertion",
+            "method": "B-Tree Insertion Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain the algorithm to delete a given element in a binomial Heap. Give an example for the same. 5.",
+            "year": "o19-20_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Heaps",
+            "method": "Binomial Heap Deletion Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Compare the various programming paradigms such as divide-and-conquer, dynamic programming and greedy approach.",
+            "year": "o19-20_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Comparison of Paradigms",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What do you mean by convex hull? Describe an algorithm that solves the convex hull problem. Find the time complexity of the algorithm. 6.",
+            "year": "o19-20_cleaned",
+            "topic": "Computational Geometry",
+            "subtopic": "Convex Hull",
+            "method": "Not specified",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Solve the following 0/1 knapsack problem using dynamic programming. ~ P=[11,21,31,33] w=[2,11,22,15] c=40, n=4.",
+            "year": "o19-20_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "0/1 Knapsack Problem",
+            "method": "Dynamic Programming",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Define Floyd Warshall Algorithm for all Pair shortest path and apply the same on following graph: 7.",
+            "year": "o19-20_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "All-Pairs Shortest Path",
+            "method": "Floyd-Warshall Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Describe in detail Knuth-Morris-Pratt string ching algorithm. Compute the pref x function 7 for the pattern ababbabbabbababbabb when the alphabet is ~ = {a,b}.",
+            "year": "o19-20_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Knuth-Morris-Pratt Algorithm",
+            "method": "Prefix Function Computation",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51",
+            "year": "o19-20_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Approximation for TSP",
+            "method": "Approximation Algorithm",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What is recurrence relation? How is a recurrence solved using master’s theorem? 2",
+            "year": "o20-21_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Master Theorem",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What is asymptotic notation? Explain Omega (Ω) notation? 2",
+            "year": "o20-21_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Asymptotic Notations",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write down the properties of binomial tree. 2",
+            "year": "o20-21_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Trees",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Differentiate Backtracking algorithm with branch and bound algorithm. 2",
+            "year": "o20-21_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Backtracking vs Branch and Bound",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Solve the recurrence T (n) = 4T(n/2) + n2 2",
+            "year": "o20-21_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Master Theorem",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain Fast Fourier Transform in brief. 2",
+            "year": "o20-21_cleaned",
+            "topic": "Fast Fourier Transform",
+            "subtopic": "FFT Overview",
+            "method": "Fast Fourier Transform",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write an algorithm for naive string matcher? 2",
+            "year": "o20-21_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Naive String Matching",
+            "method": "Naive String Matching Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain searching technique using divide and conquer approach. 2",
+            "year": "o20-21_cleaned",
+            "topic": "Divide and Conquer",
+            "subtopic": "Binary Search",
+            "method": "Divide and Conquer",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain Skip list in brief. 2",
+            "year": "o20-21_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Skip Lists",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain how algorithms performance is analyzed? 2",
+            "year": "o20-21_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Algorithm Analysis Framework",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write an algorithm for counting sort? Illustrate the operation of counting sort on the following array: A={4, 0, 2, 0, 1, 3, 5, 4, 1, 3, 2, 3} 10",
+            "year": "o20-21_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Counting Sort",
+            "method": "Counting Sort Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Show the results of inserting the keys F, S, Q, K, C, L, H, T, V, W, M, R, N, P, A, B, X, Y, D, Z, E in order into an empty B-tree. Use t=3, where t is the minimum degree of B- tree. 10",
+            "year": "o20-21_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "B-Tree Insertion",
+            "method": "B-Tree Insertion Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Discuss greedy approach to an activity selection problem of scheduling several competing activities. Solve following activity selection problem S = {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10} Si = {1, 2, 3, 4, 7, 8, 9, 9, 11, 12} Fi = {3, 5, 4, 7, 10, 9, 11, 13, 12, 14} 10",
+            "year": "o20-21_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Activity Selection Problem",
+            "method": "Greedy Choice Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is sum of subset problem? Draw a state space tree for Sum of subset problem using backtracking? Let n=6, m=30 and w [1:6] = {5, 10, 12, 13, 15, 18} 10",
+            "year": "o20-21_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Sum of Subsets Problem",
+            "method": "Backtracking",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Write KMP algorithm for string matching? Perform the KMP algorithm to search the occurrences of the pattern abaab in the text string abbabaabaabab. 10",
+            "year": "o20-21_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Knuth-Morris-Pratt Algorithm",
+            "method": "Knuth-Morris-Pratt Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Solve the following recurrence relation: i. T (n) = T (n-1) + n4 ii. T (n) = T (n/4) + T (n/2) + n2 10",
+            "year": "o20-21_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Substitution / Recursion Tree Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Write an algorithm for insertion sort. Find the time complexity of Insertion sort in all cases. 10 ===== PAGE 2 ===== AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 2 | P a g e 4.",
+            "year": "o20-21_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Insertion Sort",
+            "method": "Insertion Sort Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Write an algorithm for insertion of key in the Red-Black Tree. Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- 5, 16, 22, 25, 2, 10, 18, 30, 50, 12, 1. 10",
+            "year": "o20-21_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Red-Black Tree Insertion",
+            "method": "Red-Black Tree Insertion Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain and write an algorithm for union of two binomial heaps and also write its time complexity? 10 5.",
+            "year": "o20-21_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Heaps",
+            "method": "Binomial Heap Union Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Define minimum spanning tree (MST). Write Prim’s algorithm to generate a MST for any given weighted graph. Generate MST for the following graph using Prim’s algorithm. 10",
+            "year": "o20-21_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Minimum Spanning Tree",
+            "method": "Prim's Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain Dijkstra’s algorithm to solve single source shortest path problem with suitable example. 10 6.",
+            "year": "o20-21_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Single Source Shortest Path",
+            "method": "Dijkstra's Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is travelling salesman problem (TSP)? Find the solution of following TSP using dynamic programming. 0 1 15 6 2 0 7 3 9 6 0 12 10 4 8 0 10",
+            "year": "o20-21_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "Travelling Salesman Problem",
+            "method": "Dynamic Programming",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Discuss n queen’s problem. Solve 4 queen’s problem using backtracking method? 10 7.",
+            "year": "o20-21_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "N-Queens Problem",
+            "method": "Backtracking",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Write short notes on following: (i.) Randomized algorithm. (ii.) NP- complete and NP hard. 10",
+            "year": "o20-21_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Randomized Algorithms and Complexity Classes",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What is approximation algorithm? Explain set cover problem using approximation algorithm. 10",
+            "year": "o20-21_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Set Cover Problem",
+            "method": "Greedy Approximation Algorithm",
+            "question_type": "Theory"
+        },
+        {
+            "question": "How analyze the performance of an algorithm in different cases?",
+            "year": "o21-22_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Best, Worst, and Average Case Analysis",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Derive the time complexity of Merge sort.",
+            "year": "o21-22_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Merge Sort",
+            "method": "Recurrence Relation",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain left rotation in RB tree.",
+            "year": "o21-22_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Tree Rotations",
+            "method": "Left Rotation",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write down the properties of Fibonacci Heap.",
+            "year": "o21-22_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Fibonacci Heaps",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain Greedy programming in brief.",
+            "year": "o21-22_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Greedy Technique",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "What do you mean by convex hull?",
+            "year": "o21-22_cleaned",
+            "topic": "Computational Geometry",
+            "subtopic": "Convex Hull",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write down the Floyd Warshal algorithm.",
+            "year": "o21-22_cleaned",
+            "topic": "Dynamic Programming",
+            "subtopic": "All-Pairs Shortest Path",
+            "method": "Floyd-Warshall Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain Branch and Bound method in brief.",
+            "year": "o21-22_cleaned",
+            "topic": "Algorithm Design Techniques",
+            "subtopic": "Branch and Bound",
+            "method": "Branch and Bound",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain Randomized algorithm in brief.",
+            "year": "o21-22_cleaned",
+            "topic": "Randomized Algorithms",
+            "subtopic": "Randomized Algorithm Concepts",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Explain NP-complete and NP-Hard.",
+            "year": "o21-22_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Complexity Classes",
+            "method": "Not specified",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Solve the recurrence",
+            "year": "o21-22_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Not specified",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "T (n) =3T (n/4) + cn2 using recursion tree method. ii) T (n) = n + 2T (n/2) using Iteration method. (Given T(1)=1)",
+            "year": "o21-22_cleaned",
+            "topic": "Analysis of Algorithms",
+            "subtopic": "Recurrence Relations",
+            "method": "Recursion Tree and Iteration Method",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is Binomial Heap? Write down the algorithm for Decrease key operation in Binomial Heap also write its time complexity.",
+            "year": "o21-22_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Binomial Heaps",
+            "method": "Decrease-Key Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Write and explain the Kruskal algorithm to find the Minimum Spanning Tree of a graph with suitable example.",
+            "year": "o21-22_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Minimum Spanning Tree",
+            "method": "Kruskal's Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is N queens problem? Draw a state space tree for 4 queens problem using backtracking.",
+            "year": "o21-22_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "N-Queens Problem",
+            "method": "Backtracking",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Write Merge sort algorithm and sort the following sequence {23, 11, 5, 15, 68, 31, 4, 17} using merge sort.",
+            "year": "o21-22_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Merge Sort",
+            "method": "Merge Sort Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What do you understand by stable and unstable sorting? Sort the following sequence {25, 57, 48, 36, 12, 91, 86, 32} using heap sort. 4.",
+            "year": "o21-22_cleaned",
+            "topic": "Sorting",
+            "subtopic": "Heap Sort and Stability",
+            "method": "Heap Sort Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- {15, 13, 12, 16, 19, 23, 5, 8}.",
+            "year": "o21-22_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Red-Black Tree Insertion",
+            "method": "Red-Black Tree Insertion Algorithm",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "What is skip list? Explain the Search operation in Skip list with suitable ===== PAGE 2 ===== QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 example also write its algorithm. 5.",
+            "year": "o21-22_cleaned",
+            "topic": "Advanced Data Structures",
+            "subtopic": "Skip Lists",
+            "method": "Skip List Search Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is Knapsack problem? Solve Fractional knapsack problem using greedy programming for the following four items with their weights w = {3, 5, 9, 5} and values P = {45, 30, 45, 10} with knapsack capacity is 16.",
+            "year": "o21-22_cleaned",
+            "topic": "Greedy Algorithms",
+            "subtopic": "Fractional Knapsack Problem",
+            "method": "Greedy Approach",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Write down the Bellman Ford algorithm to solve the single source shortest path problem also write its time complexity. 6.",
+            "year": "o21-22_cleaned",
+            "topic": "Graph Algorithms",
+            "subtopic": "Single Source Shortest Path",
+            "method": "Bellman-Ford Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "What is travelling salesman problem (TSP)? Find the solution of following TSP using Branch & Bound method 0 20 30 10 11 15 0 16 4 2 3 5 0 2 4 19 6 18 0 3 16 4 7 16 0",
+            "year": "o21-22_cleaned",
+            "topic": "Branch and Bound",
+            "subtopic": "Travelling Salesman Problem",
+            "method": "Branch and Bound",
+            "question_type": "Numerical"
+        },
+        {
+            "question": "Explain the method of finding Hamiltonian cycles in a graph using backtracking method with suitable example. 7.",
+            "year": "o21-22_cleaned",
+            "topic": "Backtracking",
+            "subtopic": "Hamiltonian Cycle",
+            "method": "Backtracking",
+            "question_type": "Theory"
+        },
+        {
+            "question": "Write and explain the algorithm to solve vertex cover problem using approximation algorithm.",
+            "year": "o21-22_cleaned",
+            "topic": "NP-Completeness",
+            "subtopic": "Vertex Cover Problem",
+            "method": "Approximation Algorithm",
+            "question_type": "Algorithm"
+        },
+        {
+            "question": "Explain and Write the Knuth-Morris-Pratt algorithm for pattern matching also write its time complexity.",
+            "year": "o21-22_cleaned",
+            "topic": "String Matching",
+            "subtopic": "Knuth-Morris-Pratt Algorithm",
+            "method": "Knuth-Morris-Pratt Algorithm",
+            "question_type": "Algorithm"
+        }
+    ]
+}

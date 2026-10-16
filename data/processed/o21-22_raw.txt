@@ -1,0 +1,209 @@
+
+===== PAGE 1 =====
+
+QP22O1P_290
+ | 30-Dec-2021 08:59:17 | 117.55.242.131
+QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131
+ 
+Printed Page: 1 of 2 
+  
+Subject Code: KCS503 
+0Roll No: 0 0 
+0 0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+ 
+B. TECH. 
+(SEM V) THEORY EXAMINATION 2021-22 
+DESIGN AND ANALYSIS OF ALGORITHM 
+Time: 3 Hours 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Total Marks: 100 
+Note:  1. Attempt all Sections. If require any missing data; then choose suitably. 
+ 
+ 2. Any special paper specific instruction. 
+ 
+SECTION A 
+1. 
+Attempt all questions in brief. 
+ 
+ 
+ 
+ 
+ 
+2 x 10 = 20 
+a.  
+How analyze the performance of an algorithm in different cases? 
+b.  
+Derive the time complexity of Merge sort. 
+c.  
+Explain left rotation in RB tree. 
+d.  
+Write down the properties of Fibonacci Heap. 
+e.  
+Explain Greedy programming in brief. 
+f.  
+What do you mean by convex hull? 
+g.  
+Write down the Floyd Warshal algorithm. 
+h.  
+Explain Branch and Bound method in brief. 
+i.  
+Explain Randomized algorithm in brief. 
+j.  
+Explain NP-complete and NP-Hard. 
+SECTION B 
+2. 
+Attempt any three of the following: 
+ 
+ 
+ 
+ 
+10 x 3 = 30 
+a.  
+Solve the recurrence  
+i) 
+T (n) =3T (n/4) + cn2 using recursion tree method. 
+ii) 
+T (n) = n + 2T (n/2) using Iteration method. (Given T(1)=1) 
+b.  
+What is Binomial Heap? Write down the algorithm for Decrease key operation 
+in Binomial Heap also write its time complexity. 
+c.  
+Write and explain the Kruskal algorithm to find the Minimum Spanning Tree of 
+a graph with suitable example. 
+d.  
+What is N queens problem? Draw a state space tree for 4 queens problem using 
+backtracking. 
+e.  
+Write Rabin Karp string matching algorithm. Working modulo q=11, how 
+many spurious hits does the Rabin karp matcher in the text T= 
+3141592653589793, when looking for the pattern P=26.  
+SECTION C 
+3. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+10 x 1 = 10 
+(a) 
+Write Merge sort algorithm and sort the following sequence {23, 11, 5, 15, 68, 
+31, 4, 17} using merge sort. 
+(b) 
+What do you understand by stable and unstable sorting? Sort the following 
+sequence {25, 57, 48, 36, 12, 91, 86, 32} using heap sort. 
+ 
+ 
+4. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+10 x 1 = 10 
+(a) 
+Discuss the various cases for insertion of key in red-black tree for given 
+sequence of key in an empty red-black tree-   {15, 13, 12, 16, 19, 23, 5, 8}.           
+(b) 
+What is skip list? Explain the Search operation in Skip list with suitable
+
+===== PAGE 2 =====
+
+QP22O1P_290
+ | 30-Dec-2021 08:59:17 | 117.55.242.131
+QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131
+ 
+Printed Page: 2 of 2 
+  
+Subject Code: KCS503 
+0Roll No: 0 0 
+0 0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+ 
+example also write its algorithm. 
+ 
+5. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+10 x 1 = 10 
+(a) 
+What is Knapsack problem? Solve Fractional knapsack problem using greedy 
+programming for the following four items with their weights w = {3, 5, 9, 5} 
+and values P = {45, 30, 45, 10} with knapsack capacity is 16. 
+(b) 
+Write down the Bellman Ford algorithm to solve the single source shortest path 
+problem also write its time complexity. 
+ 
+6. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+10 x 1 = 10 
+(a) 
+What is travelling salesman problem (TSP)? Find the solution of following TSP 
+using Branch & Bound method 
+ 
+ 
+0 
+20 30 10 11 
+15 
+0 
+16 4 
+2 
+3 
+5 
+0 
+2 
+4 
+19 
+6 
+18 0 
+3 
+16 
+4 
+7 
+16 0 
+(b) 
+Explain the method of finding Hamiltonian cycles in a graph using 
+backtracking method with suitable example. 
+ 
+7. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+10 x 1 = 10 
+(a) 
+Write and explain the algorithm to solve vertex cover problem using 
+approximation algorithm. 
+(b) 
+Explain and Write the Knuth-Morris-Pratt algorithm for pattern matching also 
+write its time complexity.

@@ -1,0 +1,561 @@
+{
+    "total_questions_analyzed": 119,
+    "topic_frequency": [
+        {
+            "topic": "Analysis of Algorithms",
+            "question_count": 20,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Advanced Data Structures",
+            "question_count": 20,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Sorting",
+            "question_count": 10,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Greedy Algorithms",
+            "question_count": 10,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "NP-Completeness",
+            "question_count": 10,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Dynamic Programming",
+            "question_count": 9,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Backtracking",
+            "question_count": 8,
+            "year_count": 4,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Algorithm Design Techniques",
+            "question_count": 6,
+            "year_count": 4,
+            "years": [
+                "o17-18_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Graph Algorithms",
+            "question_count": 6,
+            "year_count": 4,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "String Matching",
+            "question_count": 6,
+            "year_count": 5,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Computational Geometry",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o19-20_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Fast Fourier Transform",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "topic": "Divide and Conquer",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "topic": "Data Structures",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o17-18_cleaned"
+            ]
+        },
+        {
+            "topic": "Introduction to Algorithms",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o17-18_cleaned"
+            ]
+        },
+        {
+            "topic": "Special Topics",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o17-18_cleaned"
+            ]
+        },
+        {
+            "topic": "Searching Algorithms",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "topic": "Randomized Algorithms",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "topic": "Branch and Bound",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        }
+    ],
+    "method_frequency": [
+        {
+            "method": "Backtracking",
+            "question_count": 6,
+            "year_count": 4,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Master Theorem",
+            "question_count": 5,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Recursion Tree Method",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "B-Tree Insertion Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Kruskal's Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o19-20_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Heap Sort Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Dynamic Programming",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o19-20_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Binomial Heap Union Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Knuth-Morris-Pratt Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o17-18_cleaned",
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Floyd-Warshall Algorithm",
+            "question_count": 3,
+            "year_count": 3,
+            "years": [
+                "o18-19_cleaned",
+                "o19-20_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Dijkstra's Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o17-18_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Greedy Approach",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o17-18_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Polynomial-time Reduction",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "Prim's Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Red-Black Tree Insertion and Deletion",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "Bellman-Ford Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Divide and Conquer",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Fast Fourier Transform",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o18-19_cleaned",
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Merge Sort Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o19-20_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Approximation Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o19-20_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Red-Black Tree Insertion Algorithm",
+            "question_count": 2,
+            "year_count": 2,
+            "years": [
+                "o20-21_cleaned",
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Branch and Bound",
+            "question_count": 2,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Red-Black Tree Insertion",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o17-18_cleaned"
+            ]
+        },
+        {
+            "method": "Mathematical Proof",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o18-19_cleaned"
+            ]
+        },
+        {
+            "method": "Dynamic Programming and Greedy",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o18-19_cleaned"
+            ]
+        },
+        {
+            "method": "2-3-4 Tree Insertion and Deletion",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o18-19_cleaned"
+            ]
+        },
+        {
+            "method": "KMP Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o18-19_cleaned"
+            ]
+        },
+        {
+            "method": "Master Theorem and Decision Tree Model",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "Binomial Heap Deletion Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "Prefix Function Computation",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o19-20_cleaned"
+            ]
+        },
+        {
+            "method": "Naive String Matching Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Counting Sort Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Greedy Choice Method",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Substitution / Recursion Tree Method",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Insertion Sort Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Greedy Approximation Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o20-21_cleaned"
+            ]
+        },
+        {
+            "method": "Recurrence Relation",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Left Rotation",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Recursion Tree and Iteration Method",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Decrease-Key Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        },
+        {
+            "method": "Skip List Search Algorithm",
+            "question_count": 1,
+            "year_count": 1,
+            "years": [
+                "o21-22_cleaned"
+            ]
+        }
+    ]
+}

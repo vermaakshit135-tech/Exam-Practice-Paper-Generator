@@ -1,0 +1,43 @@
+# Google Gemini / GenAI
+google-genai
+
+# Environment variables
+python-dotenv
+
+# PDF processing
+PyMuPDF
+
+# Document processing
+python-docx
+
+# Data processing
+pandas
+numpy
+
+# Web scraping / research tools
+requests
+beautifulsoup4
+
+# HTTP / API support
+httpx
+
+# Streamlit UI
+streamlit
+
+# Pydantic for structured outputs / validation
+pydantic
+
+# Machine Learning
+scikit-learn
+
+# Tokenization / text processing
+tiktoken
+
+# Vector database / embeddings (for RAG)
+chromadb
+
+# Hugging Face embeddings
+sentence-transformers
+
+# Progress / utilities
+tqdm

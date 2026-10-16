@@ -1,0 +1,216 @@
+[
+    {
+        "cluster_id": 1,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_a",
+                "question": "Solve the following recurrence using Master method: T (n) = 4T (n/3) + n2"
+            },
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_a",
+                "question": "Solve the recurrence T (n) = 4T(n/2) + n2 2"
+            }
+        ]
+    },
+    {
+        "cluster_id": 2,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_a",
+                "question": "Explain Single source shortest path."
+            },
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "Explain Dijkstra’s algorithm to solve single source shortest path problem with suitable example. 10 6."
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_c",
+                "question": "Write down the Bellman Ford algorithm to solve the single source shortest path problem also write its time complexity. 6."
+            }
+        ]
+    },
+    {
+        "cluster_id": 3,
+        "classification": "REPEATED",
+        "reason": "Same core task detected by a cluster-specific rule; verify manually.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_a",
+                "question": "Differentiate between Backtracking and Branch and Bound Techniques."
+            },
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_a",
+                "question": "Differentiate Backtracking algorithm with branch and bound algorithm. 2"
+            }
+        ]
+    },
+    {
+        "cluster_id": 4,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_b",
+                "question": "What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST of the Graph. Also write its Time-Complexity"
+            },
+            {
+                "year": "o19-20_cleaned",
+                "section": "section_b",
+                "question": "Define spanning tree. Write Kruskal’s algorithm for finding minimum cost spanning tree. Describe how Kruskal’s algorithm is different from Prim’s algorithm for finding minimum cost spanning tree."
+            }
+        ]
+    },
+    {
+        "cluster_id": 5,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_c",
+                "question": "Explain Convex –Hull problem."
+            },
+            {
+                "year": "o19-20_cleaned",
+                "section": "section_c",
+                "question": "What do you mean by convex hull? Describe an algorithm that solves the convex hull problem. Find the time complexity of the algorithm. 6."
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_a",
+                "question": "What do you mean by convex hull?"
+            }
+        ]
+    },
+    {
+        "cluster_id": 6,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o17-18_cleaned",
+                "section": "section_c",
+                "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest integer value for a A’ is asymptotically faster than A?"
+            },
+            {
+                "year": "o18-19_cleaned",
+                "section": "section_c",
+                "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of ‘a’ such that A is asymptotically faster than B.?"
+            }
+        ]
+    },
+    {
+        "cluster_id": 7,
+        "classification": "REPEATED",
+        "reason": "Same core task detected by a cluster-specific rule; verify manually.",
+        "questions": [
+            {
+                "year": "o18-19_cleaned",
+                "section": "section_c",
+                "question": "Explain the different conditions of getting union of two existing binomial Heaps. Also write algorithm for union of two Binomial Heaps. What is its complexity?"
+            },
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "Explain and write an algorithm for union of two binomial heaps and also write its time complexity? 10 5."
+            }
+        ]
+    },
+    {
+        "cluster_id": 8,
+        "classification": "REVIEW",
+        "reason": "OCR contamination or page metadata detected.",
+        "questions": [
+            {
+                "year": "o19-20_cleaned",
+                "section": "section_c",
+                "question": "Solve the recurrence using recursion tree method: T (n)=T (1/2) + T (W/4) + T (1/8) +0 MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51 ===== PAGE 2 ===== Printed Page 2 of 2 Sub Code: RCSS02 Paper Id: 110502 Roll No: L | | | | | | | | 4,"
+            },
+            {
+                "year": "o19-20_cleaned",
+                "section": "section_c",
+                "question": "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51"
+            }
+        ]
+    },
+    {
+        "cluster_id": 9,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "Write an algorithm for insertion of key in the Red-Black Tree. Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- 5, 16, 22, 25, 2, 10, 18, 30, 50, 12, 1. 10"
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_c",
+                "question": "Discuss the various cases for insertion of key in red-black tree for given sequence of key in an empty red-black tree- {15, 13, 12, 16, 19, 23, 5, 8}."
+            }
+        ]
+    },
+    {
+        "cluster_id": 10,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "What is travelling salesman problem (TSP)? Find the solution of following TSP using dynamic programming. 0 1 15 6 2 0 7 3 9 6 0 12 10 4 8 0 10"
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_c",
+                "question": "What is travelling salesman problem (TSP)? Find the solution of following TSP using Branch & Bound method 0 20 30 10 11 15 0 16 4 2 3 5 0 2 4 19 6 18 0 3 16 4 7 16 0"
+            }
+        ]
+    },
+    {
+        "cluster_id": 11,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "Write short notes on following: (i.) Randomized algorithm. (ii.) NP- complete and NP hard. 10"
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_a",
+                "question": "Explain NP-complete and NP-Hard."
+            }
+        ]
+    },
+    {
+        "cluster_id": 12,
+        "classification": "SIMILAR",
+        "reason": "Questions may share a topic but differ in method, input, or requirements.",
+        "questions": [
+            {
+                "year": "o20-21_cleaned",
+                "section": "section_c",
+                "question": "What is approximation algorithm? Explain set cover problem using approximation algorithm. 10"
+            },
+            {
+                "year": "o21-22_cleaned",
+                "section": "section_c",
+                "question": "Write and explain the algorithm to solve vertex cover problem using approximation algorithm."
+            }
+        ]
+    }
+]

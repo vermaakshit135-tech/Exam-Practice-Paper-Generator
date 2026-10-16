@@ -1,0 +1,294 @@
+
+===== PAGE 1 =====
+
+AKTU_QP20E290QP
+ | 27-Feb-2021 09:38:47 | 117.55.242.131
+AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131
+ 
+Printed Page: 1 of 2 
+  
+Subject Code: KCS503 
+0Roll No: 0 0 
+0 0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+ 
+1 | P a g e  
+ 
+B. TECH. 
+(SEM-V) THEORY EXAMINATION 2020-21 
+DESIGN AND ANALYSIS OF ALGORITHM 
+Time: 3 Hours 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Total Marks: 100 
+Note:  1. Attempt all Sections. If require any missing data; then choose suitably. 
+SECTION A 
+1. 
+Attempt all questions in brief. 
+ 
+ 
+ 
+ 
+ 
+2 x 10 = 20 
+Qno. 
+Question 
+Marks 
+CO 
+a.  
+What is recurrence relation? How is a recurrence solved using master’s 
+theorem? 
+2 
+ 
+b.  
+What is asymptotic notation? Explain Omega (Ω) notation? 
+2 
+ 
+c.  
+Write down the properties of binomial tree. 
+2 
+ 
+d.  
+Differentiate Backtracking algorithm with branch and bound algorithm. 
+2 
+ 
+e.  
+Solve the recurrence T (n) = 4T(n/2) + n2 
+2 
+ 
+f.  
+Explain Fast Fourier Transform in brief. 
+2 
+ 
+g.  
+Write an algorithm for naive string matcher? 
+2 
+ 
+h.  
+Explain searching technique using divide and conquer approach. 
+2 
+ 
+i.  
+Explain Skip list in brief. 
+2 
+ 
+j.  
+Explain how algorithms performance is analyzed? 
+2 
+ 
+SECTION B 
+2. 
+Attempt any three of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+Write an algorithm for counting sort? Illustrate the operation of counting 
+sort on the following array: A={4, 0, 2, 0, 1, 3, 5, 4, 1, 3, 2, 3} 
+10 
+ 
+b. 
+Show the results of inserting the keys F, S, Q, K, C, L, H, T, V, W, M, 
+R, N, P, A, B, X, Y, D, Z, E in order into an empty B-tree. Use t=3, 
+where t is the minimum degree of B- tree. 
+10 
+ 
+c. 
+Discuss greedy approach to an activity selection problem of scheduling 
+several competing activities. Solve following activity selection problem 
+S = {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10} 
+Si = {1, 2, 3, 4, 7, 8, 9, 9, 11, 12} Fi = {3, 5, 4, 7, 10, 9, 11, 13, 12, 14} 
+10 
+ 
+d. 
+What is sum of subset problem? Draw a state space tree for Sum of 
+subset problem using backtracking? Let n=6, m=30 and w [1:6] = {5, 10, 
+12, 13, 15, 18}  
+10 
+ 
+e. 
+Write KMP algorithm for string matching? Perform the KMP algorithm 
+to search the occurrences of the pattern abaab in the text string 
+abbabaabaabab. 
+10 
+ 
+SECTION C 
+3. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+Solve the following recurrence relation: 
+i. 
+T (n) = T (n-1) + n4 
+ii. 
+T (n) = T (n/4) + T (n/2) + n2 
+10 
+ 
+b. 
+Write an algorithm for insertion sort. Find the time complexity of 
+Insertion sort in all cases. 
+10
+
+===== PAGE 2 =====
+
+AKTU_QP20E290QP
+ | 27-Feb-2021 09:38:47 | 117.55.242.131
+AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131
+ 
+Printed Page: 2 of 2 
+  
+Subject Code: KCS503 
+0Roll No: 0 0 
+0 0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+ 
+2 | P a g e  
+ 
+4. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+Write an algorithm for insertion of key in the Red-Black Tree. Discuss 
+the various cases for insertion of key in red-black tree for given sequence 
+of key in an empty red-black tree-    5, 16, 22, 25, 2, 10, 18, 30, 50, 12, 1. 
+10 
+ 
+b. 
+Explain and write an algorithm for union of two binomial heaps and also 
+write its time complexity? 
+10 
+ 
+ 
+5. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+Define minimum spanning tree (MST). Write Prim’s algorithm to 
+generate a MST for any given weighted graph. Generate MST for the 
+following graph using Prim’s algorithm. 
+ 
+10 
+ 
+b. 
+Explain Dijkstra’s algorithm to solve single source shortest path problem 
+with suitable example. 
+10 
+ 
+ 
+6. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+What is travelling salesman problem (TSP)? Find the solution of 
+following TSP using dynamic programming.  
+ 
+ 
+0 
+1 
+15 6 
+2 
+0 
+7 
+3 
+9 
+6 
+0 
+12 
+10 
+4 
+8 
+0 
+10 
+ 
+b. 
+Discuss n queen’s problem. Solve 4 queen’s problem using backtracking 
+method? 
+10 
+ 
+ 
+7. 
+Attempt any one part of the following: 
+ 
+ 
+ 
+ 
+ 
+Qno. 
+Question 
+Marks 
+CO 
+a. 
+Write short notes on following: 
+ 
+ 
+ 
+   
+(i.) 
+Randomized algorithm. 
+(ii.) 
+NP- complete and NP hard. 
+10 
+ 
+b. 
+What is approximation algorithm? Explain set cover problem using 
+approximation algorithm. 
+10
