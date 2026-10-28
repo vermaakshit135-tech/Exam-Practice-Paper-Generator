@@ -1,290 +1,150 @@
-import pymupdf
-import pytesseract
 
-from PIL import Image
+import re
 from pathlib import Path
 from io import BytesIO
 
+import pymupdf
+import pytesseract
+from PIL import Image
 
-# ============================================================
-# TESSERACT CONFIGURATION
-# ============================================================
 
+# Windows par Tesseract OCR ka path
 pytesseract.pytesseract.tesseract_cmd = (
     r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 )
 
 
-# ============================================================
-# OCR FUNCTION
-# ============================================================
-
 def extract_page_with_ocr(page):
-    """
-    Convert a PDF page into an image
-    and extract text using Tesseract OCR.
-    """
-
-    # Increase resolution for better OCR accuracy
+    """Extract page text using OCR."""
     pix = page.get_pixmap(
-        matrix=pymupdf.Matrix(2, 2)
+        matrix=pymupdf.Matrix(2, 2),
+        alpha=False
     )
 
-    # Convert PDF image bytes into PIL Image
-    image = Image.open(
-        BytesIO(
-            pix.tobytes("png")
-        )
-    )
+    image = Image.open(BytesIO(pix.tobytes("png")))
 
-    # OCR
+    # English OCR
     text = pytesseract.image_to_string(
-        image
+        image,
+        lang="eng",
+        config="--psm 3"
     )
 
-    return text
+    return text.strip()
 
 
-# ============================================================
-# PDF TEXT EXTRACTION
-# ============================================================
+def is_text_corrupted(text):
+    """Detect common OCR and text-extraction corruption."""
+    if not text or len(text.strip()) < 30:
+        return True
+
+    corruption_patterns = [
+        "â€™",
+        "â€“",
+        "â€œ",
+        "â€",
+        "Â",
+        "Ã",
+        "�",
+    ]
+
+    if any(pattern in text for pattern in corruption_patterns):
+        return True
+
+    # Detect excessive replacement or unusual characters.
+    unusual_count = len(re.findall(r"[�]", text))
+    if unusual_count >= 2:
+        return True
+
+    return False
+
 
 def extract_text(pdf_path):
-    """
-    Extract text from a PDF page by page.
-
-    First:
-        PyMuPDF normal text extraction
-
-    If no text is found:
-        Tesseract OCR
-    """
-
+    """Extract text from all pages, using OCR when needed."""
     pages = []
 
     with pymupdf.open(pdf_path) as docs:
+        for page_number, page in enumerate(docs, start=1):
+            text = page.get_text("text").strip()
 
-        for page_number, page in enumerate(
-            docs,
-            start=1
-        ):
-
-            # --------------------------------------------
-            # Try normal PDF text extraction
-            # --------------------------------------------
-
-            text = page.get_text().strip()
-
-            if text:
-
+            if is_text_corrupted(text):
                 print(
-                    f"  Page {page_number}: "
-                    f"normal text extraction"
+                    f"Page {page_number}: "
+                    "corrupted/empty text detected; trying OCR"
                 )
 
-            # --------------------------------------------
-            # If no text -> OCR
-            # --------------------------------------------
+                ocr_text = extract_page_with_ocr(page)
 
+                # Use OCR only if it returned usable text.
+                if ocr_text and len(ocr_text) > len(text) * 0.5:
+                    text = ocr_text
+                    print(f"Page {page_number}: OCR text selected")
+                else:
+                    print(
+                        f"Page {page_number}: "
+                        "OCR result not clearly better; keeping original"
+                    )
             else:
-
-                print(
-                    f"  Page {page_number}: "
-                    f"OCR required"
-                )
-
-                text = extract_page_with_ocr(
-                    page
-                )
+                print(f"Page {page_number}: normal text extraction")
 
             pages.append(text)
 
     return pages
 
 
-# ============================================================
-# PROCESS ALL PDFs
-# ============================================================
-
 def parse_all(input_dir="data/pdf"):
-    """
-    Process all PDF files inside data/pdf.
-    """
+    """Parse every PDF in the input directory."""
+    pdf_dir = Path(input_dir)
+
+    if not pdf_dir.exists():
+        raise FileNotFoundError(
+            f"PDF directory not found: {pdf_dir.resolve()}"
+        )
+
+    pdf_files = sorted(pdf_dir.glob("*.pdf"))
+
+    if not pdf_files:
+        print(f"No PDF files found in {pdf_dir.resolve()}")
+        return {}
 
     result = {}
 
-    pdf_dir = Path(input_dir)
-
-    # Check folder
-    if not pdf_dir.exists():
-
-        print(
-            f"PDF folder not found: {pdf_dir}"
-        )
-
-        return result
-
-    # Find PDFs
-    pdf_files = sorted(
-        pdf_dir.glob("*.pdf")
-    )
-
-    if not pdf_files:
-
-        print(
-            f"No PDF files found in: {pdf_dir}"
-        )
-
-        return result
-
-    # Process every PDF
-    for pdf in pdf_files:
-
-        print(
-            f"\nProcessing: {pdf.name}"
-        )
-
-        pages = extract_text(
-            pdf
-        )
-
-        result[pdf.name] = pages
+    for pdf_path in pdf_files:
+        print(f"\nProcessing: {pdf_path.name}")
+        result[pdf_path.name] = extract_text(pdf_path)
 
     return result
 
 
-# ============================================================
-# SAVE RAW TEXT
-# ============================================================
-
-def save_raw_text(
-    data,
-    output_dir="data/processed"
-):
-    """
-    Save extracted text of every PDF
-    into *_raw.txt files.
-    """
-
-    output_path = Path(
-        output_dir
-    )
-
-    output_path.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+def save_raw_text(data, output_dir="data/processed"):
+    """Save extracted page text into individual raw text files."""
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
 
     for pdf_name, pages in data.items():
+        txt_name = Path(pdf_name).stem + "_raw.txt"
+        output_file = output_path / txt_name
 
-        # Example:
-        # o18-19.pdf
-        # ->
-        # o18-19_raw.txt
+        with open(output_file, "w", encoding="utf-8") as file:
+            for page_number, text in enumerate(pages, start=1):
+                file.write(f"\n===== PAGE {page_number} =====\n\n")
+                file.write(text)
+                file.write("\n")
 
-        txt_name = (
-            Path(pdf_name).stem
-            + "_raw.txt"
-        )
+        print(f"Saved: {output_file}")
 
-        file_path = (
-            output_path / txt_name
-        )
-
-        # Write text
-        with open(
-            file_path,
-            "w",
-            encoding="utf-8"
-        ) as file:
-
-            for page_number, text in enumerate(
-                pages,
-                start=1
-            ):
-
-                # Page separator
-                file.write(
-                    f"\n===== PAGE {page_number} =====\n\n"
-                )
-
-                file.write(
-                    text
-                )
-
-                file.write(
-                    "\n"
-                )
-
-        # Character count
-        total_chars = sum(
-            len(page)
-            for page in pages
-        )
-
-        print(
-            f"Saved: {file_path} "
-            f"({total_chars} characters)"
-        )
-
-
-# ============================================================
-# MAIN
-# ============================================================
 
 if __name__ == "__main__":
+    extracted_data = parse_all()
 
-    # --------------------------------------------
-    # Step 1: Extract all PDFs
-    # --------------------------------------------
+    print("\nExtraction Summary")
+    print("-" * 40)
 
-    data = parse_all()
-
-    # --------------------------------------------
-    # Step 2: Show summary
-    # --------------------------------------------
-
-    print(
-        "\n" + "=" * 60
-    )
-
-    print(
-        "PDF PARSER SUMMARY"
-    )
-
-    print(
-        "=" * 60
-    )
-
-    for name, pages in data.items():
-
-        total = sum(
-            len(page)
-            for page in pages
-        )
-
+    for pdf_name, pages in extracted_data.items():
+        total_chars = sum(len(page) for page in pages)
         print(
-            f"{name}: "
-            f"{len(pages)} pages, "
-            f"{total} characters"
+            f"{pdf_name}: "
+            f"{len(pages)} pages, {total_chars} characters"
         )
 
-    # --------------------------------------------
-    # Step 3: Save extracted text
-    # --------------------------------------------
-
-    print(
-        "\nSaving raw extracted text..."
-    )
-
-    save_raw_text(
-        data
-    )
-
-    # --------------------------------------------
-    # Done
-    # --------------------------------------------
-
-    print(
-        "\nPDF parsing completed."
-    )
+    save_raw_text(extracted_data)

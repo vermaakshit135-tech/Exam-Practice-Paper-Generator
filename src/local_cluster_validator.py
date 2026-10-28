@@ -1,5 +1,8 @@
+
 import json
+import re
 from pathlib import Path
+from itertools import combinations
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -7,80 +10,80 @@ INPUT_FILE = BASE_DIR / "data" / "processed" / "question_clusters.json"
 OUTPUT_FILE = BASE_DIR / "data" / "processed" / "local_cluster_review.json"
 
 
+def normalize(text):
+    text = str(text or "").lower()
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def classify_cluster(cluster):
     questions = cluster.get("questions", [])
-    texts = [q.get("question", "").lower() for q in questions]
-    combined = " ".join(texts)
+    texts = [q.get("question", "").strip() for q in questions]
+    normalized = [normalize(text) for text in texts]
 
-    # Incomplete questions
-    if any(
-        text.strip() in {"solve the recurrence", "solve the following recurrence"}
-        for text in texts
+    if len(texts) < 2 or any(len(text) < 20 for text in texts):
+        return "REVIEW", "Missing, short, or incomplete question text."
+
+    combined = " ".join(normalized)
+
+    # Similar topic but different algorithms/tasks
+    if "single source shortest path" in combined:
+        if "dijkstra" in combined and "bellman ford" in combined:
+            return "RELATED", "Same SSSP topic, but Dijkstra and Bellman-Ford are different algorithms."
+
+    if "travelling salesman" in combined or " tsp " in f" {combined} ":
+        if "dynamic programming" in combined and "branch" in combined:
+            return "RELATED", "TSP questions use different methods and input matrices."
+
+    if "set cover" in combined and "vertex cover" in combined:
+        return "RELATED", "Set Cover and Vertex Cover are different problems."
+
+    if "randomized algorithm" in combined and (
+        "np complete" in combined or "np hard" in combined
     ):
-        return "REVIEW", "Incomplete question detected; check original PDF."
+        return "RELATED", "NP-completeness and randomized algorithms are different tasks."
 
-    # Clearly unrelated concepts
-    unrelated_pairs = [
-        ("n queens", "subset sum"),
-        ("insertion sort", "skip list"),
-        ("binomial tree", "fibonacci heap"),
-    ]
+    if "kruskal" in combined and "prim" in combined:
+        return "RELATED", "MST questions have different requirements, including algorithm comparison."
 
-    for first, second in unrelated_pairs:
-        if first in combined and second in combined:
-            return "UNRELATED", f"Different concepts: {first} and {second}."
+    if "red black tree" in combined or "red black" in combined:
+        return "RELATED", "Red-Black Tree insertion questions use different key sequences."
 
-    # OCR contamination / mixed topics
-    if "approximation algorithm" in combined and "recursion tree method" in combined:
-        return "UNRELATED", "Possible OCR contamination: recurrence mixed with approximation algorithms."
+    if "approximation algorithm" in combined and (
+        "travelling salesman" in combined or "set cover" in combined
+        or "vertex cover" in combined
+    ):
+        return "RELATED", "General approximation questions and problem-specific applications differ."
 
-    # Exact repeated task candidates
-    duplicate_clusters = {
-        4: "Same Backtracking vs Branch and Bound comparison.",
-        14: "Same Binomial Heap union algorithm and complexity question.",
-    }
+    # Check whether questions ask the same task
+    if all(
+        ("backtracking" in text and "branch and bound" in text)
+        for text in normalized
+    ):
+        return "SIMILAR", "Both ask for a comparison of Backtracking and Branch and Bound."
 
-    cluster_id = cluster.get("cluster_id")
-    if cluster_id in duplicate_clusters:
-        return "DUPLICATE", duplicate_clusters[cluster_id]
+    if all("binomial heap" in text and "union" in text for text in normalized):
+        return "SIMILAR", "Both ask about the union operation on Binomial Heaps."
 
-    # Related topics but different tasks
-    related_clusters = {
-        2: "SSSP topic; Dijkstra and Bellman-Ford questions have different requirements.",
-        3: "Graph coloring definition versus applications.",
-        5: "MST/Kruskal questions include different additional requirements.",
-        6: "Red-Black Tree insertion questions use different key sequences.",
-        7: "Convex Hull definition versus algorithm and complexity.",
-        9: "Recurrence comparison questions need formula/OCR verification.",
-        11: "Binomial Heap questions ask about different operations.",
-        12: "KMP questions ask for different calculations or explanations.",
-        15: "FFT questions have different requirements.",
-        18: "TSP questions use different methods and input matrices.",
-        19: "Set Cover and Vertex Cover are different problems in a related area.",
-    }
+    if all("convex hull" in text for text in normalized):
+        return "RELATED", "Same Convex Hull topic, but definition and algorithm/complexity requirements differ."
 
-    if cluster_id in related_clusters:
-        return "RELATED", related_clusters[cluster_id]
+    if all("master method" in text or "recurrence" in text for text in normalized):
+        return "RELATED", "Recurrence questions have different equations; verify OCR and solve separately."
 
-    if cluster_id == 1:
-        return "REVIEW", "Recurrence equations differ; one question is incomplete."
+    if all("approximation algorithm" in text for text in normalized):
+        return "RELATED", "Same broad topic, but the specific problems may differ."
 
-    if cluster_id == 8:
-        return "REVIEW", "Subset Sum questions are related, but N-Queens is unrelated."
+    if all("red black tree" in text or "red black" in text for text in normalized):
+        return "RELATED", "Same data structure, but different input sequences."
 
-    if cluster_id == 10:
-        return "REVIEW", "NP-completeness questions are related; randomized algorithms is a different task."
+    if all("minimum cost spanning tree" in text or "kruskal" in text or "spanning tree" in text for text in normalized):
+        return "RELATED", "MST questions overlap but include different requirements."
 
-    if cluster_id == 13:
-        return "REVIEW", "Mixed topics detected; inspect original PDF for OCR contamination."
+    if all("travelling salesman" in text or " tsp " in f" {text} " for text in normalized):
+        return "RELATED", "Same TSP problem, but methods or input matrices may differ."
 
-    if cluster_id == 16:
-        return "UNRELATED", "Binomial Tree and Fibonacci Heap are different structures."
-
-    if cluster_id == 17:
-        return "UNRELATED", "Insertion Sort and Skip List are unrelated topics; likely bad grouping."
-
-    return "REVIEW", "Needs manual verification."
+    return "REVIEW", "No reliable rule established; manual verification required."
 
 
 def main():
@@ -93,23 +96,29 @@ def main():
 
     report = []
 
-    for cluster in clusters:
+    for index, cluster in enumerate(clusters, start=1):
         status, reason = classify_cluster(cluster)
 
         report.append({
-            "cluster_id": cluster.get("cluster_id"),
+            "cluster_id": cluster.get("cluster_id", index),
             "status": status,
             "reason": reason,
-            "questions": cluster.get("questions", []),
+            "questions": cluster.get("questions", [])
         })
 
-        print(f"Cluster {cluster.get('cluster_id')}: {status} - {reason}")
+        print(
+            f"Cluster {cluster.get('cluster_id', index)}: "
+            f"{status} - {reason}"
+        )
+
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
         json.dump(report, file, indent=4, ensure_ascii=False)
 
     print("\n--- SUMMARY ---")
-    for status in ["DUPLICATE", "RELATED", "UNRELATED", "REVIEW"]:
+
+    for status in ["SIMILAR", "RELATED", "REVIEW"]:
         count = sum(1 for item in report if item["status"] == status)
         print(f"{status}: {count}")
 

@@ -1,8 +1,8 @@
 [
     {
         "cluster_id": 1,
-        "status": "REVIEW",
-        "reason": "Recurrence equations differ; one question is incomplete.",
+        "status": "RELATED",
+        "reason": "Recurrence questions have different equations; verify OCR and solve separately.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
@@ -19,7 +19,7 @@
     {
         "cluster_id": 2,
         "status": "RELATED",
-        "reason": "SSSP topic; Dijkstra and Bellman-Ford questions have different requirements.",
+        "reason": "Same SSSP topic, but Dijkstra and Bellman-Ford are different algorithms.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
@@ -29,7 +29,7 @@
             {
                 "year": "o20-21_cleaned",
                 "section": "section_c",
-                "question": "Explain Dijkstra’s algorithm to solve single source shortest path problem with suitable example. 10 6."
+                "question": "Explain Dijkstra's algorithm to solve single source shortest path problem with suitable example. 10 6."
             },
             {
                 "year": "o21-22_cleaned",
@@ -40,8 +40,8 @@
     },
     {
         "cluster_id": 3,
-        "status": "RELATED",
-        "reason": "Graph coloring definition versus applications.",
+        "status": "SIMILAR",
+        "reason": "Both ask for a comparison of Backtracking and Branch and Bound.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
@@ -57,30 +57,30 @@
     },
     {
         "cluster_id": 4,
-        "status": "DUPLICATE",
-        "reason": "Same Backtracking vs Branch and Bound comparison.",
+        "status": "RELATED",
+        "reason": "MST questions have different requirements, including algorithm comparison.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
                 "section": "section_b",
-                "question": "What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST of the Graph. Also write its Time-Complexity"
+                "question": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm and Find MST of the Graph. Also write its Time-Complexity"
             },
             {
                 "year": "o19-20_cleaned",
                 "section": "section_b",
-                "question": "Define spanning tree. Write Kruskal’s algorithm for finding minimum cost spanning tree. Describe how Kruskal’s algorithm is different from Prim’s algorithm for finding minimum cost spanning tree."
+                "question": "Define spanning tree. Write Kruskal's algorithm for finding minimum cost spanning tree. Describe how Kruskal's algorithm is different from Prim's algorithm for finding minimum cost spanning tree."
             }
         ]
     },
     {
         "cluster_id": 5,
         "status": "RELATED",
-        "reason": "MST/Kruskal questions include different additional requirements.",
+        "reason": "Same Convex Hull topic, but definition and algorithm/complexity requirements differ.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
                 "section": "section_c",
-                "question": "Explain Convex –Hull problem."
+                "question": "Explain Convex -Hull problem."
             },
             {
                 "year": "o19-20_cleaned",
@@ -97,24 +97,41 @@
     {
         "cluster_id": 6,
         "status": "RELATED",
-        "reason": "Red-Black Tree insertion questions use different key sequences.",
+        "reason": "Recurrence questions have different equations; verify OCR and solve separately.",
         "questions": [
             {
                 "year": "o17-18_cleaned",
                 "section": "section_c",
-                "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest integer value for a A’ is asymptotically faster than A?"
+                "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T' (n) =aT' (n/4) +n 2 .What is the largest integer value for a A' is asymptotically faster than A?"
             },
             {
                 "year": "o18-19_cleaned",
                 "section": "section_c",
-                "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of ‘a’ such that A is asymptotically faster than B.?"
+                "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of 'a' such that A is asymptotically faster than B.?"
             }
         ]
     },
     {
         "cluster_id": 7,
         "status": "RELATED",
-        "reason": "Convex Hull definition versus algorithm and complexity.",
+        "reason": "General approximation questions and problem-specific applications differ.",
+        "questions": [
+            {
+                "year": "o18-19_cleaned",
+                "section": "section_a",
+                "question": "What are approximation algorithms? meant by P (n) approximation algorithms?"
+            },
+            {
+                "year": "o19-20_cleaned",
+                "section": "section_c",
+                "question": "What is an approximation algorithm?' ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem."
+            }
+        ]
+    },
+    {
+        "cluster_id": 8,
+        "status": "SIMILAR",
+        "reason": "Both ask about the union operation on Binomial Heaps.",
         "questions": [
             {
                 "year": "o18-19_cleaned",
@@ -129,26 +146,9 @@
         ]
     },
     {
-        "cluster_id": 8,
-        "status": "UNRELATED",
-        "reason": "Possible OCR contamination: recurrence mixed with approximation algorithms.",
-        "questions": [
-            {
-                "year": "o19-20_cleaned",
-                "section": "section_c",
-                "question": "Solve the recurrence using recursion tree method: T (n)=T (1/2) + T (W/4) + T (1/8) +0 MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51 ===== PAGE 2 ===== Printed Page 2 of 2 Sub Code: RCSS02 Paper Id: 110502 Roll No: L | | | | | | | | 4,"
-            },
-            {
-                "year": "o19-20_cleaned",
-                "section": "section_c",
-                "question": "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51"
-            }
-        ]
-    },
-    {
         "cluster_id": 9,
         "status": "RELATED",
-        "reason": "Recurrence comparison questions need formula/OCR verification.",
+        "reason": "Red-Black Tree insertion questions use different key sequences.",
         "questions": [
             {
                 "year": "o20-21_cleaned",
@@ -164,8 +164,8 @@
     },
     {
         "cluster_id": 10,
-        "status": "REVIEW",
-        "reason": "NP-completeness questions are related; randomized algorithms is a different task.",
+        "status": "RELATED",
+        "reason": "TSP questions use different methods and input matrices.",
         "questions": [
             {
                 "year": "o20-21_cleaned",
@@ -182,7 +182,7 @@
     {
         "cluster_id": 11,
         "status": "RELATED",
-        "reason": "Binomial Heap questions ask about different operations.",
+        "reason": "NP-completeness and randomized algorithms are different tasks.",
         "questions": [
             {
                 "year": "o20-21_cleaned",
@@ -199,7 +199,7 @@
     {
         "cluster_id": 12,
         "status": "RELATED",
-        "reason": "KMP questions ask for different calculations or explanations.",
+        "reason": "Set Cover and Vertex Cover are different problems.",
         "questions": [
             {
                 "year": "o20-21_cleaned",

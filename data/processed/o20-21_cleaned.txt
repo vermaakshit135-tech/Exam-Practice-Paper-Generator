@@ -31,7 +31,7 @@ Question
 Marks
 CO
 a.
-What is recurrence relation? How is a recurrence solved using master’s
+What is recurrence relation? How is a recurrence solved using master's
 theorem?
 2
 b.
@@ -151,12 +151,12 @@ Question
 Marks
 CO
 a.
-Define minimum spanning tree (MST). Write Prim’s algorithm to
+Define minimum spanning tree (MST). Write Prim's algorithm to
 generate a MST for any given weighted graph. Generate MST for the
-following graph using Prim’s algorithm.
+following graph using Prim's algorithm.
 10
 b.
-Explain Dijkstra’s algorithm to solve single source shortest path problem
+Explain Dijkstra's algorithm to solve single source shortest path problem
 with suitable example.
 10
 6.
@@ -185,7 +185,7 @@ following TSP using dynamic programming.
 0
 10
 b.
-Discuss n queen’s problem. Solve 4 queen’s problem using backtracking
+Discuss n queen's problem. Solve 4 queen's problem using backtracking
 method?
 10
 7.

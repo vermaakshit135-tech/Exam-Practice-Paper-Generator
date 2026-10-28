@@ -2,3 +2,10 @@
 .venv/
 __pycache__/
 *.pyc
+# Temporary and backup files
+src/*_backup.py
+tatus
+
+# Python cache
+__pycache__/
+*.py[cod]

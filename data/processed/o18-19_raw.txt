@@ -53,8 +53,6 @@ d. Insert the following keys in a 2-3-4 B Tree:
 there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss
 Prim’s Minimum Spanning Tree Algorithm in detail.
 
-
-
 ===== PAGE 2 =====
 
 4
@@ -97,5 +95,3 @@ Attempt any one part of the following: Tx1=7
 algorithm for FFT...
 (b) Give a linear time algorithin to determine if a text T is a cycle rotation of another string T*
 For example, ‘RAJA’ and ‘JARA’ are cyclic rotations of each other.
-
-

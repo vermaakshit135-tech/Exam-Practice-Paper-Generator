@@ -53,7 +53,7 @@
       },
       {
         "marker": "c",
-        "question": "What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST of the Graph. Also write its Time-Complexity"
+        "question": "What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm and Find MST of the Graph. Also write its Time-Complexity"
       },
       {
         "marker": "d",
@@ -70,11 +70,11 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "Explain Convex –Hull problem."
+            "question": "Explain Convex -Hull problem."
           },
           {
             "marker": "b",
-            "question": "Find the shortest path in the below graph from the source vertex 1 to all other vertices by using Dijkstra’s algorithm. ===== PAGE 2 ===== 4."
+            "question": "Find the shortest path in the below graph from the source vertex 1 to all other vertices by using Dijkstra's algorithm. 4."
           }
         ]
       },
@@ -96,11 +96,11 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest integer value for a A’ is asymptotically faster than A?"
+            "question": "The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A competing algorithm A has a running time of T' (n) =aT' (n/4) +n 2 .What is the largest integer value for a A' is asymptotically faster than A?"
           },
           {
             "marker": "b",
-            "question": "Discuss the problem classes P, NP and NP –complete .with class relationship. 6."
+            "question": "Discuss the problem classes P, NP and NP -complete .with class relationship. 6."
           }
         ]
       },
@@ -122,7 +122,7 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "Compute the prefix function π for the pattern P= a b a c a b using KNUTH- MORRIS –PRATT Algorithm. Also explain Naïve String Matching algorithm."
+            "question": "Compute the prefix function π for the pattern P= a b a c a b using KNUTH- MORRIS -PRATT Algorithm. Also explain Naïve String Matching algorithm."
           },
           {
             "marker": "b",
@@ -136,7 +136,7 @@
     "section_a": [
       {
         "marker": "a",
-        "question": "Rank the following by growth rate: 1, 26%, log n, log (logn), log’n, (Ign), 4, (3/2)\", a!"
+        "question": "Rank the following by growth rate: 1, 26%, log n, log (logn), log'n, (Ign), 4, (3/2)\", a!"
       },
       {
         "marker": "b",
@@ -152,7 +152,7 @@
       },
       {
         "marker": "e",
-        "question": "Compare adjacency matrix and linked Adj -hsts representation of a Graph with , suitable example/diagram."
+        "question": "Compare adjacency matrix and linked Adj -hsts representation of a Graph with , suitable example/diagram. a PY"
       },
       {
         "marker": "f",
@@ -166,7 +166,7 @@
     "section_b": [
       {
         "marker": "a",
-        "question": "Use a recursion tree to givé‘ait asymptotically tight solution to the x¢curfence Ti) = Tian) + T((1 - @yih+ on, where a is a constant in the ranged *a< | and > 0 is also a consti aS"
+        "question": "Use a recursion tree to givé'ait asymptotically tight solution to the x¢curfence Ti) = Tian) + T((1 - @yih+ on, where a is a constant in the ranged *a< | and > 0 is also a consti aS"
       },
       {
         "marker": "b",
@@ -182,7 +182,7 @@
       },
       {
         "marker": "e",
-        "question": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Prim’s Minimum Spanning Tree Algorithm in detail. ===== PAGE 2 ===== 4 SECTION C"
+        "question": "Prove that if the weights on the edge of the connected undirected graph are distinct then there is a unique Minimum Spanning Tree. Give an example in this regard. Also discuss Prim's Minimum Spanning Tree Algorithm in detail. 4 SECTION C"
       }
     ],
     "section_c": [
@@ -191,7 +191,7 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of ‘a’ such that A is asymptotically faster than B.?"
+            "question": "The recurrence T (n) = 7T (w/3) + n° describes the running time of an algorithm A. Another competing algorithm B has a running time of S (n) = a S (n/ 9) + n®. What is the smallest value of 'a' such that A is asymptotically faster than B.?"
           },
           {
             "marker": "b",
@@ -221,7 +221,7 @@
           },
           {
             "marker": "b",
-            "question": "— Given an integer x and a positive number n, use divide & conquer approach to write a function that computes x*with time complexity O (logn). ~"
+            "question": "- Given an integer x and a positive number n, use divide & conquer approach to write a function that computes x*with time complexity O (logn). ~"
           }
         ]
       },
@@ -230,7 +230,7 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "Solve the Subset sum problem using Backtracking.\"“where n=4, m=18, w [4] = (5. 10, 8, 13}"
+            "question": "Solve the Subset sum problem using Backtracking.\"\"where n=4, m=18, w [4] = (5. 10, 8, 13}"
           },
           {
             "marker": "b",
@@ -247,7 +247,7 @@
           },
           {
             "marker": "b",
-            "question": "Give a linear time algorithin to determine if a text T is a cycle rotation of another string T* For example, ‘RAJA’ and ‘JARA’ are cyclic rotations of each other."
+            "question": "Give a linear time algorithin to determine if a text T is a cycle rotation of another string T* For example, 'RAJA' and 'JARA' are cyclic rotations of each other."
           }
         ]
       }
@@ -287,7 +287,7 @@
     "section_b": [
       {
         "marker": "a",
-        "question": "(i) _—_ Solve the recurrenoe.T (n) = 2T(n/2) + n?+ 2n+ 1 (ii) Prove that worst case running time of any comparison sort is Q(nlogn)"
+        "question": "(i) _-_ Solve the recurrenoe.T (n) = 2T(n/2) + n?+ 2n+ 1 (ii) Prove that worst case running time of any comparison sort is Q(nlogn)"
       },
       {
         "marker": "b",
@@ -295,7 +295,7 @@
       },
       {
         "marker": "c",
-        "question": "Define spanning tree. Write Kruskal’s algorithm for finding minimum cost spanning tree. Describe how Kruskal’s algorithm is different from Prim’s algorithm for finding minimum cost spanning tree."
+        "question": "Define spanning tree. Write Kruskal's algorithm for finding minimum cost spanning tree. Describe how Kruskal's algorithm is different from Prim's algorithm for finding minimum cost spanning tree."
       },
       {
         "marker": "d",
@@ -316,7 +316,7 @@
           },
           {
             "marker": "b",
-            "question": "Solve the recurrence using recursion tree method: T (n)=T (1/2) + T (W/4) + T (1/8) +0 MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51 ===== PAGE 2 ===== Printed Page 2 of 2 Sub Code: RCSS02 Paper Id: 110502 Roll No: L | | | | | | | | 4,"
+            "question": "Solve the recurrence using recursion tree method: T (n)=T (1/2) + T (W/4) + T (1/8) +0 Sub Code: RCSS02 Paper Id: 110502 Roll No: L | | | | | | | | 4,"
           }
         ]
       },
@@ -325,7 +325,7 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "Using minimum degree ‘t’ as 3, insert following sequence of integers 10, 25, 20, 35, 30, 55, 40, 45, 50, 55, 60, 75, 70, 65, 80, 85 and 90 in an initially empty B-Tree. Give the number of nodes splitting operations that take place."
+            "question": "Using minimum degree 't' as 3, insert following sequence of integers 10, 25, 20, 35, 30, 55, 40, 45, 50, 55, 60, 75, 70, 65, 80, 85 and 90 in an initially empty B-Tree. Give the number of nodes splitting operations that take place."
           },
           {
             "marker": "b",
@@ -368,7 +368,7 @@
           },
           {
             "marker": "b",
-            "question": "What is an approximation algorithm?’ ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem. MANISH KUMAR JHA | 14-Dec-2019 13:30:37 | 47.30.216.51"
+            "question": "What is an approximation algorithm?' ne is meant by P (n) approximation algorithms? Discuss approximation algorithm for Travelling Salesman Problem."
           }
         ]
       }
@@ -378,7 +378,7 @@
     "section_a": [
       {
         "marker": "a",
-        "question": "What is recurrence relation? How is a recurrence solved using master’s theorem? 2"
+        "question": "What is recurrence relation? How is a recurrence solved using master's theorem? 2"
       },
       {
         "marker": "b",
@@ -449,7 +449,7 @@
           },
           {
             "marker": "b",
-            "question": "Write an algorithm for insertion sort. Find the time complexity of Insertion sort in all cases. 10 ===== PAGE 2 ===== AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 2 | P a g e 4."
+            "question": "Write an algorithm for insertion sort. Find the time complexity of Insertion sort in all cases. 10 AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 AKTU_QP20E290QP | 27-Feb-2021 09:38:47 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 2 | P a g e 4."
           }
         ]
       },
@@ -471,11 +471,11 @@
         "alternatives": [
           {
             "marker": "a",
-            "question": "Define minimum spanning tree (MST). Write Prim’s algorithm to generate a MST for any given weighted graph. Generate MST for the following graph using Prim’s algorithm. 10"
+            "question": "Define minimum spanning tree (MST). Write Prim's algorithm to generate a MST for any given weighted graph. Generate MST for the following graph using Prim's algorithm. 10"
           },
           {
             "marker": "b",
-            "question": "Explain Dijkstra’s algorithm to solve single source shortest path problem with suitable example. 10 6."
+            "question": "Explain Dijkstra's algorithm to solve single source shortest path problem with suitable example. 10 6."
           }
         ]
       },
@@ -488,7 +488,7 @@
           },
           {
             "marker": "b",
-            "question": "Discuss n queen’s problem. Solve 4 queen’s problem using backtracking method? 10 7."
+            "question": "Discuss n queen's problem. Solve 4 queen's problem using backtracking method? 10 7."
           }
         ]
       },
@@ -595,7 +595,7 @@
           },
           {
             "marker": "b",
-            "question": "What is skip list? Explain the Search operation in Skip list with suitable ===== PAGE 2 ===== QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 example also write its algorithm. 5."
+            "question": "What is skip list? Explain the Search operation in Skip list with suitable QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 QP22O1P_290 | 30-Dec-2021 08:59:17 | 117.55.242.131 Printed Page: 2 of 2 Subject Code: KCS503 0Roll No: 0 0 0 0 0 0 0 0 0 0 0 0 0 example also write its algorithm. 5."
           }
         ]
       },

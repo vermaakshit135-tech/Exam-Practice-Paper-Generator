@@ -13,13 +13,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-INPUT_FILE = (
-    BASE_DIR / "data" / "processed" / "questions.json"
-)
-
-OUTPUT_FILE = (
-    BASE_DIR / "data" / "processed" / "question_clusters.json"
-)
+INPUT_FILE = BASE_DIR / "data" / "processed" / "questions.json"
+OUTPUT_FILE = BASE_DIR / "data" / "processed" / "question_clusters.json"
 
 SIMILARITY_THRESHOLD = 0.45
 
@@ -32,15 +27,12 @@ def load_questions():
     """Load extracted questions from JSON."""
 
     if not INPUT_FILE.exists():
-        raise FileNotFoundError(
-            f"Questions file not found: {INPUT_FILE}"
-        )
+        raise FileNotFoundError(f"Questions file not found: {INPUT_FILE}")
 
     with open(INPUT_FILE, "r", encoding="utf-8") as file:
         data = json.load(file)
 
     print("Questions JSON loaded successfully!")
-
     return data
 
 
@@ -53,28 +45,34 @@ def extract_questions(data):
 
     extracted = []
 
+    def add_question(item, year, section):
+        if not isinstance(item, dict):
+            return
+
+        question = item.get("question")
+
+        if isinstance(question, str) and question.strip():
+            extracted.append({
+                "year": year,
+                "section": section,
+                "question": question.strip()
+            })
+
     if isinstance(data, list):
         for item in data:
-            if not isinstance(item, dict):
-                continue
-
-            question = item.get("question")
-
-            if question and question.strip():
-                extracted.append({
-                    "year": item.get("year", "Unknown"),
-                    "section": item.get("section", "Unknown"),
-                    "question": question.strip()
-                })
+            if isinstance(item, dict):
+                add_question(
+                    item,
+                    item.get("year", "Unknown"),
+                    item.get("section", "Unknown")
+                )
 
     elif isinstance(data, dict):
         for year, sections in data.items():
-
             if not isinstance(sections, dict):
                 continue
 
             for section_name, section_data in sections.items():
-
                 if not isinstance(section_data, list):
                     continue
 
@@ -82,36 +80,19 @@ def extract_questions(data):
                     if not isinstance(item, dict):
                         continue
 
-                    # Section C: process alternatives separately
+                    # Section C alternatives
                     if section_name == "section_c":
                         alternatives = item.get("alternatives", [])
 
-                        for alternative in alternatives:
-                            if not isinstance(alternative, dict):
-                                continue
-
-                            question = alternative.get("question")
-
-                            if question and question.strip():
-                                extracted.append({
-                                    "year": year,
-                                    "section": section_name,
-                                    "question": question.strip()
-                                })
-
-                    # Sections A and B
+                        if isinstance(alternatives, list):
+                            for alternative in alternatives:
+                                add_question(
+                                    alternative, year, section_name
+                                )
                     else:
-                        question = item.get("question")
-
-                        if question and question.strip():
-                            extracted.append({
-                                "year": year,
-                                "section": section_name,
-                                "question": question.strip()
-                            })
+                        add_question(item, year, section_name)
 
     print(f"Total extracted questions: {len(extracted)}")
-
     return extracted
 
 
@@ -122,14 +103,12 @@ def extract_questions(data):
 def cluster_questions(questions):
     """
     Group questions conservatively.
-
-    A question joins a group only when it meets the similarity
-    threshold against every question already in that group.
-    This reduces incorrect grouping caused by transitive links.
+    A question must meet the threshold against every group member.
+    Return both clusters and unclustered question indices.
     """
 
     if len(questions) < 2:
-        return []
+        return [], list(range(len(questions)))
 
     texts = [item["question"] for item in questions]
 
@@ -139,29 +118,26 @@ def cluster_questions(questions):
         sublinear_tf=True
     )
 
-    vectors = vectorizer.fit_transform(texts)
+    try:
+        vectors = vectorizer.fit_transform(texts)
+    except ValueError as error:
+        print("Clustering could not be completed:", error)
+        return [], list(range(len(questions)))
 
     similarity_matrix = cosine_similarity(vectors)
-
     groups = []
 
     for i in range(len(questions)):
-
         best_group = None
         best_score = -1.0
 
         for group in groups:
-
             scores = [
                 float(similarity_matrix[i, member])
                 for member in group
             ]
 
-            # Must be sufficiently similar to every group member
-            if all(
-                score >= SIMILARITY_THRESHOLD
-                for score in scores
-            ):
+            if all(score >= SIMILARITY_THRESHOLD for score in scores):
                 group_score = min(scores)
 
                 if group_score > best_score:
@@ -174,23 +150,19 @@ def cluster_questions(questions):
             groups.append([i])
 
     clusters = []
+    clustered_indices = set()
 
     for group in groups:
-
-        # Ignore questions without a sufficiently similar partner
         if len(group) < 2:
             continue
 
         similarity_scores = []
 
         for i, j in combinations(group, 2):
-
-            score = float(similarity_matrix[i, j])
-
             similarity_scores.append({
                 "question_1": questions[i]["question"],
                 "question_2": questions[j]["question"],
-                "score": round(score, 3)
+                "score": round(float(similarity_matrix[i, j]), 3)
             })
 
         clusters.append({
@@ -201,30 +173,40 @@ def cluster_questions(questions):
             "similarity_scores": similarity_scores
         })
 
-    return clusters
+        clustered_indices.update(group)
+
+    unclustered_indices = [
+        index
+        for index in range(len(questions))
+        if index not in clustered_indices
+    ]
+
+    return clusters, unclustered_indices
 
 
 # ============================================================
-# SAVE CLUSTERS
+# SAVE RESULTS
 # ============================================================
 
-def save_clusters(clusters):
-    """Save similar-question groups to JSON."""
+def save_results(clusters, questions, unclustered_indices):
+    """Save clusters and unclustered questions in one JSON object."""
 
-    OUTPUT_FILE.parent.mkdir(
-        parents=True,
-        exist_ok=True
-    )
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    result = {
+        "similarity_threshold": SIMILARITY_THRESHOLD,
+        "total_questions": len(questions),
+        "total_clusters": len(clusters),
+        "clusters": clusters,
+        "unclustered_questions": [
+            questions[index] for index in unclustered_indices
+        ]
+    }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
-        json.dump(
-            clusters,
-            file,
-            ensure_ascii=False,
-            indent=4
-        )
+        json.dump(result, file, ensure_ascii=False, indent=4)
 
-    print(f"Clusters saved to: {OUTPUT_FILE}")
+    print(f"Results saved to: {OUTPUT_FILE}")
 
 
 # ============================================================
@@ -232,41 +214,30 @@ def save_clusters(clusters):
 # ============================================================
 
 def main():
-
     print("=" * 60)
     print("QUESTION CLUSTERING")
     print("=" * 60)
 
     data = load_questions()
-
     questions = extract_questions(data)
 
     if not questions:
         print("No questions found. Check questions.json.")
         return
 
-    try:
-        clusters = cluster_questions(questions)
+    clusters, unclustered_indices = cluster_questions(questions)
 
-    except ValueError as error:
-        print("Clustering could not be completed:", error)
-        return
-
-    save_clusters(clusters)
-
-    print(f"\nQuestions processed: {len(questions)}")
-    print(f"Similar-question groups found: {len(clusters)}")
+    save_results(clusters, questions, unclustered_indices)
 
     clustered_count = sum(
         len(cluster["questions"])
         for cluster in clusters
     )
 
+    print(f"\nQuestions processed: {len(questions)}")
+    print(f"Similar-question groups found: {len(clusters)}")
     print(f"Questions included in groups: {clustered_count}")
-    print(
-        "Questions not included in groups:",
-        len(questions) - clustered_count
-    )
+    print(f"Questions not included in groups: {len(unclustered_indices)}")
 
     print("\nCLUSTER SUMMARY")
     print("-" * 60)

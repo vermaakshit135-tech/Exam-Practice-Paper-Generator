@@ -2,100 +2,52 @@
 import json
 import re
 from pathlib import Path
+from difflib import SequenceMatcher
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data" / "processed"
 
-INPUT_FILE = BASE_DIR / "data" / "processed" / "question_clusters.json"
-OUTPUT_FILE = BASE_DIR / "data" / "processed" / "question_classification.json"
+INPUT_FILE = DATA_DIR / "question_clusters.json"
+OUTPUT_FILE = DATA_DIR / "question_classification.json"
 
 
-def normalize_text(text):
-    """Normalize text for basic comparison."""
-    text = text.lower()
-    text = re.sub(r"\b\d+\s*[a-z]?\.\s*$", "", text)
+def normalize(text):
+    text = str(text).lower()
     text = re.sub(r"[^a-z0-9\s]", " ", text)
-    return " ".join(text.split())
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def question_text(item):
+    if isinstance(item, dict):
+        return str(item.get("question", ""))
+    return str(item)
 
 
 def classify_cluster(cluster):
     questions = cluster.get("questions", [])
-
-    if not questions:
-        return "REVIEW", "No questions found in this cluster."
-
     texts = [
-        q.get("question", "").strip()
+        normalize(question_text(q))
         for q in questions
+        if question_text(q).strip()
     ]
 
-    if any(not text for text in texts):
-        return "REVIEW", "One or more questions have empty text."
+    if len(texts) < 2:
+        return "REVIEW", "Not enough readable questions to compare."
 
-    # Detect OCR contamination or extracted page metadata
-    review_signals = [
-        "===== page",
-        "printed page",
-        "roll no",
-        "manish kumar",
+    scores = [
+        SequenceMatcher(None, texts[i], texts[j]).ratio()
+        for i in range(len(texts))
+        for j in range(i + 1, len(texts))
     ]
 
-    if any(
-        signal in text.lower()
-        for text in texts
-        for signal in review_signals
-    ):
-        return "REVIEW", "OCR contamination or page metadata detected."
+    average_score = sum(scores) / len(scores)
 
-    normalized = [normalize_text(text) for text in texts]
+    if average_score >= 0.80:
+        return "REPEATED", "Question wording is highly similar."
 
-    if len(questions) == 1:
-        return "UNIQUE", "Only one question is present in this cluster."
-
-    # Exact repeated questions after normalization
-    if len(set(normalized)) == 1:
-        return "REPEATED", "Questions match after text normalization."
-
-    combined = " ".join(normalized)
-
-    # Check whether every question contains a shared task phrase.
-    # These are candidates, so verify the original questions too.
-    repeated_rules = {
-        3: ["backtracking", "branch and bound"],
-        7: ["union", "binomial heap"],
-    }
-
-    cluster_id = cluster.get("cluster_id")
-
-    if cluster_id in repeated_rules:
-        required_terms = repeated_rules[cluster_id]
-
-        if all(
-            all(term in normalize_text(text) for term in required_terms)
-            for text in texts
-        ):
-            return (
-                "REPEATED",
-                "Same core task detected by a cluster-specific rule; verify manually."
-            )
-
-    # Clearly unrelated pairs/topics
-    unrelated_pairs = [
-        ("n queens", "subset sum"),
-        ("insertion sort", "skip list"),
-        ("binomial tree", "fibonacci heap"),
-    ]
-
-    for first, second in unrelated_pairs:
-        if first in combined and second in combined:
-            return "UNRELATED", f"Different concepts detected: {first} and {second}."
-
-    # Cluster 8 is known to contain mixed/OCR-corrupted questions
-    if cluster_id == 8:
-        return "REVIEW", "Mixed topics or OCR errors may have combined unrelated questions."
-
-    return (
-        "SIMILAR",
-        "Questions may share a topic but differ in method, input, or requirements."
+    return "SIMILAR", (
+        "Questions were grouped by the clustering algorithm; "
+        "verify that they ask the same concept."
     )
 
 
@@ -105,38 +57,88 @@ def main():
         return
 
     with open(INPUT_FILE, "r", encoding="utf-8") as file:
-        clusters = json.load(file)
+        data = json.load(file)
+
+    if not isinstance(data, dict):
+        print("Error: Expected the updated dictionary format.")
+        return
+
+    clusters = data.get("clusters", [])
+    unclustered = data.get("unclustered_questions", [])
 
     results = []
+    seen = set()
+
+    def add_question(item, classification, cluster_id, reason):
+        text = question_text(item).strip()
+        key = normalize(text)
+
+        if not key or key in seen:
+            return
+
+        seen.add(key)
+
+        results.append({
+            "year": item.get("year") if isinstance(item, dict) else None,
+            "section": item.get("section") if isinstance(item, dict) else None,
+            "question": text,
+            "classification": classification,
+            "cluster_id": cluster_id,
+            "reason": reason
+        })
 
     for cluster in clusters:
         status, reason = classify_cluster(cluster)
+        cluster_id = cluster.get("cluster_id")
 
-        results.append({
-            "cluster_id": cluster.get("cluster_id"),
-            "classification": status,
-            "reason": reason,
-            "questions": cluster.get("questions", [])
-        })
+        for item in cluster.get("questions", []):
+            add_question(item, status, cluster_id, reason)
 
-        print(
-            f"Cluster {cluster.get('cluster_id')}: "
-            f"{status} - {reason}"
+    for item in unclustered:
+        add_question(
+            item,
+            "UNIQUE",
+            None,
+            "No matching cluster was found."
         )
+
+    counts = {
+        label: sum(
+            q["classification"] == label for q in results
+        )
+        for label in ("REPEATED", "SIMILAR", "UNIQUE", "REVIEW")
+    }
+
+    output = {
+        "total_questions_in_clustering": data.get("total_questions"),
+        "total_clusters": len(clusters),
+        "classified_questions": len(results),
+        "duplicate_texts_skipped": (
+            len(clusters) and sum(
+                len(c.get("questions", [])) for c in clusters
+            ) + len(unclustered) - len(results)
+        ),
+        "counts": counts,
+        "questions": results
+    }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
-        json.dump(results, file, indent=4, ensure_ascii=False)
+        json.dump(output, file, indent=4, ensure_ascii=False)
 
-    print("\n--- SUMMARY ---")
+    print("\nQUESTION CLASSIFICATION COMPLETED")
+    print(f"Questions in clustering file: {data.get('total_questions')}")
+    print(f"Questions classified: {len(results)}")
+    print(f"Repeated: {counts['REPEATED']}")
+    print(f"Similar: {counts['SIMILAR']}")
+    print(f"Unique: {counts['UNIQUE']}")
+    print(f"Review: {counts['REVIEW']}")
+    print(f"Saved to: {OUTPUT_FILE}")
 
-    for status in ["REPEATED", "SIMILAR", "UNRELATED", "UNIQUE", "REVIEW"]:
-        count = sum(
-            1 for item in results
-            if item["classification"] == status
+    if len(results) != data.get("total_questions"):
+        print(
+            "\nWARNING: Classified count differs from total. "
+            "Check for duplicate question text or missing entries."
         )
-        print(f"{status}: {count}")
-
-    print(f"\nReport saved to: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

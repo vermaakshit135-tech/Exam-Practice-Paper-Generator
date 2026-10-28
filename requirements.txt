@@ -41,3 +41,7 @@ sentence-transformers
 
 # Progress / utilities
 tqdm
+
+
+# PDF generation
+reportlab==5.0.1

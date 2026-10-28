@@ -30,7 +30,7 @@ SECTION-B
 T(n)=n+T(n/5)+T(4n/5)
 (b)Insert the following information F,S,Q,K,C,L,H,T,V,W,M,R,N,P,A,B,X,Y,D,Z,E,G,I.
 Into an empty B-tree with degree t=3.
-(c) What is Minimum Cost Spanning Tree? Explain Kruskal’s Algorithm and Find MST
+(c) What is Minimum Cost Spanning Tree? Explain Kruskal's Algorithm and Find MST
 of the Graph. Also write its Time-Complexity
 (d) What is Red-Black tree? Write an algorithm to insert a node in an empty red-black tree
 explain with suitable example.
@@ -41,10 +41,10 @@ SECTION C
 Attempt any one part of the following:
 (10 x 1=10)
 (a)
-Explain Convex –Hull problem.
+Explain Convex -Hull problem.
 (b)
 Find the shortest path in the below graph from the source vertex 1 to all other vertices
-by using Dijkstra’s algorithm.
+by using Dijkstra's algorithm.
 ===== PAGE 2 =====
 4. Attempt any one part of the following:
 (10 x 1=10)
@@ -57,9 +57,9 @@ Write down an algorithm to compute Longest Common Subsequence
 5. Attempt any one part of the following:
 (10 x 1= 10)
 (a) The recurrence T (n) =7T (n/2) +n 2 describe the running time of an algorithm A.A
-competing algorithm A has a running time of T’ (n) =aT’ (n/4) +n 2 .What is the largest
-integer value for a A’ is asymptotically faster than A?
-(b) Discuss the problem classes P, NP and NP –complete .with class relationship.
+competing algorithm A has a running time of T' (n) =aT' (n/4) +n 2 .What is the largest
+integer value for a A' is asymptotically faster than A?
+(b) Discuss the problem classes P, NP and NP -complete .with class relationship.
 6. Attempt any one part of the following:
 (10 x 1=10)
 (a) Explain properties of Binomial Heap in .Write an algorithm to perform uniting
@@ -70,5 +70,5 @@ the optimal solution
 7. Attempt any one part of the following:
 (10 x 1=10)
 (a) Compute the prefix function π for the pattern P= a b a c a b using KNUTH-
-MORRIS –PRATT Algorithm. Also explain Naïve String Matching algorithm.
+MORRIS -PRATT Algorithm. Also explain Naïve String Matching algorithm.
 (b) Explain Approximation and Randomized algorithms.
